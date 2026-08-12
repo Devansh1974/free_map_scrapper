@@ -9,13 +9,3 @@ export interface BusinessResult {
   reviews?: number;
   mapsUrl?: string;
 }
-
-export interface SearchParams {
-  query: string;
-  location: string;
-  limit: number;
-}
-
-export interface SearchProvider {
-  search(params: SearchParams): Promise<BusinessResult[]>;
-}

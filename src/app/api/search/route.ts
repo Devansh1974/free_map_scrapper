@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { GoogleSearchProvider } from "@/providers/google";
+import { searchGooglePlaces } from "@/lib/google-places";
 
 export async function GET(request: NextRequest) {
   try {
@@ -29,17 +29,15 @@ export async function GET(request: NextRequest) {
       );
     }
 
-    // Verify key presence before calling the provider
+    // Verify key presence before calling the service
     if (!process.env.GOOGLE_MAPS_API_KEY) {
       return NextResponse.json(
         { error: "Google Maps API Key is missing. Please set the GOOGLE_MAPS_API_KEY environment variable." },
         { status: 500 }
       );
     }
-
-    const provider = new GoogleSearchProvider();
     
-    const results = await provider.search({
+    const results = await searchGooglePlaces({
       query,
       location,
       limit,
@@ -73,7 +71,6 @@ export async function GET(request: NextRequest) {
     ) {
       userFriendlyMessage = "Connection to Google Places API timed out.";
     } else if (errorMsg) {
-      // Return the concise error message directly if it is custom
       userFriendlyMessage = errorMsg;
     }
 

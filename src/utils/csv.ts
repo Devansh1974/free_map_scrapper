@@ -1,4 +1,4 @@
-import { BusinessResult } from "@/providers/types";
+import { BusinessResult } from "@/types";
 
 export function exportToCSV(
   results: BusinessResult[],
