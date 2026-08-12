@@ -67,37 +67,36 @@ __turbopack_context__.s([
     ()=>GET
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/server.js [app-route] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$zod$2f$v4$2f$classic$2f$external$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__$3c$export__$2a$__as__z$3e$__ = __turbopack_context__.i("[project]/node_modules/zod/v4/classic/external.js [app-route] (ecmascript) <export * as z>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$google$2d$places$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/lib/google-places.ts [app-route] (ecmascript)");
 ;
 ;
+;
+// Zod schema for request query validation
+const searchSchema = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$zod$2f$v4$2f$classic$2f$external$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__$3c$export__$2a$__as__z$3e$__["z"].object({
+    query: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$zod$2f$v4$2f$classic$2f$external$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__$3c$export__$2a$__as__z$3e$__["z"].string().trim().min(1, "Please enter a business keyword (e.g. dentist, salon)."),
+    location: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$zod$2f$v4$2f$classic$2f$external$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__$3c$export__$2a$__as__z$3e$__["z"].string().trim().min(1, "Please enter a location (e.g. Indiranagar, Bengaluru)."),
+    limit: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$zod$2f$v4$2f$classic$2f$external$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__$3c$export__$2a$__as__z$3e$__["z"].coerce.number().int().positive("Limit must be a positive integer.").default(20)
+});
 async function GET(request) {
     try {
         const { searchParams } = new URL(request.url);
-        const query = searchParams.get("query")?.trim();
-        const location = searchParams.get("location")?.trim();
-        const limitStr = searchParams.get("limit");
-        if (!query) {
+        const queryParams = {
+            query: searchParams.get("query"),
+            location: searchParams.get("location"),
+            limit: searchParams.get("limit")
+        };
+        // Validate parameters using Zod
+        const parsed = searchSchema.safeParse(queryParams);
+        if (!parsed.success) {
+            const errorMsg = parsed.error.issues[0]?.message || "Invalid input parameters.";
             return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
-                error: "Please enter a business keyword (e.g. dentist, salon)."
+                error: errorMsg
             }, {
                 status: 400
             });
         }
-        if (!location) {
-            return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
-                error: "Please enter a location (e.g. Indiranagar, Bengaluru)."
-            }, {
-                status: 400
-            });
-        }
-        const limit = limitStr ? parseInt(limitStr, 10) : 20;
-        if (isNaN(limit) || limit <= 0) {
-            return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
-                error: "Invalid limit parameter. Must be a positive integer."
-            }, {
-                status: 400
-            });
-        }
+        const { query, location, limit } = parsed.data;
         // Verify key presence before calling the service
         if (!process.env.GOOGLE_MAPS_API_KEY) {
             return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
@@ -143,22 +142,8 @@ __turbopack_context__.s([
     "searchGooglePlaces",
     ()=>searchGooglePlaces
 ]);
-// Helper to limit concurrency of async tasks
-async function limitConcurrency(items, limit, fn) {
-    const results = new Array(items.length);
-    let currentIndex = 0;
-    const worker = async ()=>{
-        while(currentIndex < items.length){
-            const index = currentIndex++;
-            results[index] = await fn(items[index]);
-        }
-    };
-    const workers = Array.from({
-        length: Math.min(limit, items.length)
-    }, worker);
-    await Promise.all(workers);
-    return results;
-}
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$p$2d$limit$2f$index$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/p-limit/index.js [app-route] (ecmascript)");
+;
 // Fetch helper with timeout constraint (10 seconds)
 async function fetchWithTimeout(url, options, timeoutMs = 10000) {
     const controller = new AbortController();
@@ -230,16 +215,16 @@ async function searchGooglePlaces(params) {
             let errorMsg = `Google TextSearch API failed with status ${res.status}`;
             try {
                 const errData = await res.json();
-                if (errData.error?.message) {
+                if (errData?.error?.message) {
                     errorMsg = errData.error.message;
                 }
             } catch (_) {}
             throw new Error(errorMsg);
         }
         const data = await res.json();
-        const places = data.places || [];
+        const places = data?.places || [];
         for (const place of places){
-            if (place.id) {
+            if (place?.id) {
                 allPlaceIds.push(place.id);
             }
         }
@@ -248,36 +233,38 @@ async function searchGooglePlaces(params) {
     }while (nextPageToken && allPlaceIds.length < limit && pageCount < maxPages)
     // Deduplicate collected Place IDs using Set
     const uniqueIds = Array.from(new Set(allPlaceIds)).slice(0, limit);
-    // 2. Fetch Place Details concurrently for each unique Place ID (concurrency limit = 5)
-    const detailsResults = await limitConcurrency(uniqueIds, 5, async (placeId)=>{
-        try {
-            const url = `https://places.googleapis.com/v1/places/${placeId}`;
-            const res = await fetchWithTimeout(url, {
-                method: "GET",
-                headers: {
-                    "X-Goog-Api-Key": apiKey,
-                    "X-Goog-FieldMask": "id,displayName,formattedAddress,nationalPhoneNumber,websiteUri,rating,userRatingCount,primaryType,googleMapsUri"
-                }
-            }, 10000 // 10 seconds timeout
-            );
-            if (!res.ok) {
-                let errorMsg = `Details request failed for ${placeId} (status ${res.status})`;
-                try {
-                    const errData = await res.json();
-                    if (errData.error?.message) {
-                        errorMsg = errData.error.message;
+    // 2. Fetch Place Details concurrently for each unique Place ID (concurrency limit = 5) using p-limit
+    const limitPromise = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$p$2d$limit$2f$index$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"])(5);
+    const detailTasks = uniqueIds.map((placeId)=>limitPromise(async ()=>{
+            try {
+                const url = `https://places.googleapis.com/v1/places/${placeId}`;
+                const res = await fetchWithTimeout(url, {
+                    method: "GET",
+                    headers: {
+                        "X-Goog-Api-Key": apiKey,
+                        "X-Goog-FieldMask": "id,displayName,formattedAddress,nationalPhoneNumber,websiteUri,rating,userRatingCount,primaryType,googleMapsUri"
                     }
-                } catch (_) {}
-                console.warn(errorMsg);
+                }, 10000 // 10 seconds timeout
+                );
+                if (!res.ok) {
+                    let errorMsg = `Details request failed for ${placeId} (status ${res.status})`;
+                    try {
+                        const errData = await res.json();
+                        if (errData?.error?.message) {
+                            errorMsg = errData.error.message;
+                        }
+                    } catch (_) {}
+                    console.warn(errorMsg);
+                    return null;
+                }
+                const place = await res.json();
+                return mapPlaceToBusinessResult(place);
+            } catch (err) {
+                console.error(`Error fetching place details for ID ${placeId}:`, err);
                 return null;
             }
-            const place = await res.json();
-            return mapPlaceToBusinessResult(place);
-        } catch (err) {
-            console.error(`Error fetching place details for ID ${placeId}:`, err);
-            return null;
-        }
-    });
+        }));
+    const detailsResults = await Promise.all(detailTasks);
     // Filter out failed details fetches (null values) and return mapped results
     return detailsResults.filter((r)=>r !== null);
 }
