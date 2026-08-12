@@ -1,6 +1,6 @@
-# Setup Instructions
+# Setup Instructions (Frontend & Backend Structure)
 
-Follow these steps to configure the Google Places API (New) and run **FreeMapScrapper** locally or deploy it to Vercel.
+Follow these steps to configure the Google Places API (New) and run **FreeMapScrapper** locally or deploy it.
 
 ## 1. Enable APIs
 
@@ -14,32 +14,40 @@ Follow these steps to configure the Google Places API (New) and run **FreeMapScr
 1. In the Google Cloud Console, navigate to **APIs & Services > Credentials**.
 2. Click **Create Credentials > API Key**.
 3. Copy the generated API key.
-4. *(Optional)* Restrict your API key usage to HTTP referrers, IP addresses, or specifically to the Places API (New) for production security.
 
 ## 3. Add Environment Variables
 
-Create a file named `.env.local` in the root of the project:
+Create a `.env` file inside the `backend` directory:
 
 ```env
 GOOGLE_MAPS_API_KEY=your_google_maps_api_key_here
+PORT=5000
 ```
 
-## 4. Run Locally
+*Optionally, if you deploy the frontend and change the backend URL in production, configure the `NEXT_PUBLIC_API_URL` environment variable in the frontend project.*
 
-Install the dependencies and start the development server:
+## 4. Run Locally (Orchestrated)
 
-```bash
-npm install
-npm run dev
-```
+From the root directory of the project, run:
 
-Open [http://localhost:3000](http://localhost:3000) in your browser to test.
+1. **Install all dependencies** (installs both frontend and backend packages):
+   ```bash
+   npm run install:all
+   ```
+2. **Start development servers** (boots both Next.js frontend on port 3000 and Express backend on port 5000 concurrently):
+   ```bash
+   npm run dev
+   ```
 
-## 5. Deploy to Vercel
+Open [http://localhost:3000](http://localhost:3000) in your browser to search businesses.
 
-1. Push your code repository to GitHub, GitLab, or Bitbucket.
-2. Link the repository in the Vercel Dashboard.
-3. Under **Environment Variables** in Vercel project configuration, add:
-   * **Key**: `GOOGLE_MAPS_API_KEY`
-   * **Value**: *[Your API key]*
-4. Click **Deploy**.
+## 5. Deployment
+
+### Backend (Express)
+- Deploy the `backend` subfolder to any Node host (Render, Heroku, Railway, AWS, etc.).
+- Set environment variables `GOOGLE_MAPS_API_KEY` and `PORT`.
+
+### Frontend (Next.js)
+- Deploy the `frontend` subfolder to Vercel.
+- Configure the environment variable:
+  * `NEXT_PUBLIC_API_URL`: Points to your deployed Express backend URL (e.g. `https://your-backend-api.com`).
