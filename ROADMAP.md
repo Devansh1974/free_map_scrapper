@@ -8,10 +8,11 @@
 - [x] Responsive UI
 
 ## V2 — Real Google data
-- [ ] Google Places API integration
-- [ ] Place Details enrichment
+- [x] Real Google Places integration
+- [x] Place Details enrichment
+- [x] Deduplication
+- [x] CSV export with Maps URL
 - [ ] Website extraction
-- [ ] Better deduplication
 
 ## V3 — Contact enrichment
 - [ ] Email extraction

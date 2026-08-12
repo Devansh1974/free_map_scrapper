@@ -1,5 +1,4 @@
 import { NextRequest, NextResponse } from "next/server";
-import { MockSearchProvider } from "@/providers/mock";
 import { GoogleSearchProvider } from "@/providers/google";
 
 export async function GET(request: NextRequest) {
@@ -8,7 +7,6 @@ export async function GET(request: NextRequest) {
     const query = searchParams.get("query")?.trim();
     const location = searchParams.get("location")?.trim();
     const limitStr = searchParams.get("limit");
-    const providerType = searchParams.get("provider") || "mock";
 
     if (!query) {
       return NextResponse.json(
@@ -31,7 +29,15 @@ export async function GET(request: NextRequest) {
       );
     }
 
-    const provider = providerType === "google" ? new GoogleSearchProvider() : new MockSearchProvider();
+    // Verify key presence before calling the provider
+    if (!process.env.GOOGLE_MAPS_API_KEY) {
+      return NextResponse.json(
+        { error: "Google Maps API Key is missing. Please set the GOOGLE_MAPS_API_KEY environment variable." },
+        { status: 500 }
+      );
+    }
+
+    const provider = new GoogleSearchProvider();
     
     const results = await provider.search({
       query,
@@ -42,8 +48,37 @@ export async function GET(request: NextRequest) {
     return NextResponse.json({ results });
   } catch (error: any) {
     console.error("Search API Error:", error);
+    
+    // Map raw Google responses to user friendly, concise messages
+    const errorMsg = error.message || "";
+    let userFriendlyMessage = "Unable to fetch results. Please try again.";
+
+    if (
+      errorMsg.includes("API key not valid") ||
+      errorMsg.includes("API_KEY_INVALID") ||
+      errorMsg.includes("Invalid credentials")
+    ) {
+      userFriendlyMessage = "Invalid Google Maps API Key. Please verify your configuration.";
+    } else if (
+      errorMsg.includes("quota") ||
+      errorMsg.includes("Quota") ||
+      errorMsg.includes("RESOURCE_EXHAUSTED") ||
+      errorMsg.includes("limit exceeded")
+    ) {
+      userFriendlyMessage = "Google Places API quota exceeded or request blocked.";
+    } else if (
+      errorMsg.includes("timed out") ||
+      errorMsg.includes("AbortError") ||
+      errorMsg.includes("timeout")
+    ) {
+      userFriendlyMessage = "Connection to Google Places API timed out.";
+    } else if (errorMsg) {
+      // Return the concise error message directly if it is custom
+      userFriendlyMessage = errorMsg;
+    }
+
     return NextResponse.json(
-      { error: error.message || "Unable to fetch results. Please try again." },
+      { error: userFriendlyMessage },
       { status: 500 }
     );
   }

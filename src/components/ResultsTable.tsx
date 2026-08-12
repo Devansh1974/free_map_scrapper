@@ -1,4 +1,5 @@
 import { BusinessResult } from "@/providers/types";
+import { ExternalLink } from "lucide-react";
 
 interface ResultsTableProps {
   results: BusinessResult[];
@@ -40,6 +41,9 @@ export function ResultsTable({ results, options }: ResultsTableProps) {
                   Rating
                 </th>
               )}
+              <th scope="col" className="px-6 py-3 font-semibold text-gray-700">
+                Maps
+              </th>
             </tr>
           </thead>
           <tbody className="divide-y divide-gray-100 bg-white">
@@ -101,6 +105,21 @@ export function ResultsTable({ results, options }: ResultsTableProps) {
                     )}
                   </td>
                 )}
+                <td className="px-6 py-4 whitespace-nowrap">
+                  {biz.mapsUrl ? (
+                    <a
+                      href={biz.mapsUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 text-black hover:underline font-medium"
+                    >
+                      Open
+                      <ExternalLink className="h-3 w-3 text-gray-400" />
+                    </a>
+                  ) : (
+                    "—"
+                  )}
+                </td>
               </tr>
             ))}
           </tbody>

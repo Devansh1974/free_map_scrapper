@@ -18,6 +18,7 @@ export function exportToCSV(
     headers.push("Rating");
     headers.push("Review Count");
   }
+  headers.push("Google Maps URL");
 
   // Escape special CSV characters (comma, double quotes, newline)
   const escapeCSV = (val: string | number | undefined) => {
@@ -47,6 +48,7 @@ export function exportToCSV(
       row.push(escapeCSV(biz.rating !== undefined ? biz.rating.toString() : ""));
       row.push(escapeCSV(biz.reviews !== undefined ? biz.reviews.toString() : ""));
     }
+    row.push(escapeCSV(biz.mapsUrl || ""));
     return row.join(",");
   });
 

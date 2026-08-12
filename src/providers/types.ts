@@ -7,6 +7,7 @@ export interface BusinessResult {
   website?: string;
   rating?: number;
   reviews?: number;
+  mapsUrl?: string;
 }
 
 export interface SearchParams {

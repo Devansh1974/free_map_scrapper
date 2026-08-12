@@ -43,8 +43,6 @@ export default function Home() {
       searchUrl.searchParams.set("query", params.query);
       searchUrl.searchParams.set("location", params.location);
       searchUrl.searchParams.set("limit", params.limit.toString());
-      // By default using mock, but we can set provider type from env/url if needed
-      searchUrl.searchParams.set("provider", "mock");
 
       const response = await fetch(searchUrl.toString());
       const data = await response.json();
