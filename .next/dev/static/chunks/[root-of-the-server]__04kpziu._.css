@@ -662,6 +662,10 @@
     width: calc(var(--spacing) * 12);
   }
 
+  .w-20 {
+    width: calc(var(--spacing) * 20);
+  }
+
   .w-full {
     width: 100%;
   }
@@ -736,6 +740,10 @@
 
   .gap-1\.5 {
     gap: calc(var(--spacing) * 1.5);
+  }
+
+  .gap-2 {
+    gap: calc(var(--spacing) * 2);
   }
 
   .gap-2\.5 {

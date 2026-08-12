@@ -21,6 +21,8 @@ export function SearchForm({ onSearch, isLoading }: SearchFormProps) {
   const [query, setQuery] = useState("");
   const [location, setLocation] = useState("");
   const [limit, setLimit] = useState(20);
+  const [isCustom, setIsCustom] = useState(false);
+  const [customLimit, setCustomLimit] = useState("15");
   const [includeWebsite, setIncludeWebsite] = useState(true);
   const [includePhone, setIncludePhone] = useState(true);
   const [includeRating, setIncludeRating] = useState(true);
@@ -32,7 +34,7 @@ export function SearchForm({ onSearch, isLoading }: SearchFormProps) {
     onSearch({
       query: query.trim(),
       location: location.trim(),
-      limit,
+      limit: isCustom ? (Number(customLimit) || 20) : limit,
       options: {
         includeWebsite,
         includePhone,
@@ -102,33 +104,60 @@ export function SearchForm({ onSearch, isLoading }: SearchFormProps) {
             >
               Maximum results
             </label>
-            <div className="relative">
-              <select
-                id="limit"
-                disabled={isLoading}
-                value={limit}
-                onChange={(e) => setLimit(Number(e.target.value))}
-                className="h-10 w-full appearance-none rounded-lg border border-gray-200 bg-white px-3 text-sm text-gray-900 transition focus:border-black focus:ring-1 focus:ring-black focus:outline-none disabled:bg-gray-50 disabled:text-gray-400"
-              >
-                <option value={20}>20 results</option>
-                <option value={50}>50 results</option>
-                <option value={100}>100 results</option>
-              </select>
-              <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3 text-gray-500">
-                <svg
-                  className="h-4 w-4"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
+            <div className="flex gap-2">
+              <div className="relative flex-1">
+                <select
+                  id="limit"
+                  disabled={isLoading}
+                  value={isCustom ? "custom" : limit}
+                  onChange={(e) => {
+                    const val = e.target.value;
+                    if (val === "custom") {
+                      setIsCustom(true);
+                    } else {
+                      setIsCustom(false);
+                      setLimit(Number(val));
+                    }
+                  }}
+                  className="h-10 w-full appearance-none rounded-lg border border-gray-200 bg-white px-3 text-sm text-gray-900 transition focus:border-black focus:ring-1 focus:ring-black focus:outline-none disabled:bg-gray-50 disabled:text-gray-400"
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M19 9l-7 7-7-7"
-                  />
-                </svg>
+                  <option value={5}>5 results</option>
+                  <option value={10}>10 results</option>
+                  <option value={20}>20 results</option>
+                  <option value={30}>30 results</option>
+                  <option value={50}>50 results</option>
+                  <option value={70}>70 results</option>
+                  <option value={100}>100 results</option>
+                  <option value="custom">Custom...</option>
+                </select>
+                <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3 text-gray-500">
+                  <svg
+                    className="h-4 w-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </div>
               </div>
+              {isCustom && (
+                <input
+                  type="number"
+                  min={1}
+                  max={200}
+                  disabled={isLoading}
+                  placeholder="Number"
+                  value={customLimit}
+                  onChange={(e) => setCustomLimit(e.target.value)}
+                  className="h-10 w-20 rounded-lg border border-gray-200 bg-white px-3 text-sm text-gray-900 placeholder-gray-400 transition focus:border-black focus:ring-1 focus:ring-black focus:outline-none disabled:bg-gray-50 disabled:text-gray-400"
+                />
+              )}
             </div>
           </div>
         </div>
