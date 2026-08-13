@@ -47,7 +47,7 @@ export function SearchForm({ onSearch, isLoading }: SearchFormProps) {
   };
 
   return (
-    <div className="rounded-xl border border-gray-200 bg-white p-6 shadow-[0_1px_2px_rgba(0,0,0,0.05)]">
+    <div className="rounded-xl border border-[#1A73E8]/20 bg-[#1A73E8]/[0.03] p-6 shadow-[0_4px_20px_-4px_rgba(26,115,232,0.08)]">
       <div className="mb-6">
         <h2 className="text-xl font-semibold tracking-tight text-gray-900">
           Find businesses from Google Maps
