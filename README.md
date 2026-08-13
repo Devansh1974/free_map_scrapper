@@ -2,6 +2,8 @@
 
 **Find Local Businesses. Get Real Leads. Build Opportunities.**
 
+🌐 **Live Website**: [https://free-map-scrapper.vercel.app/](https://free-map-scrapper.vercel.app/)
+
 FreeMapScrapper is a lightweight, open-source Google Maps business export utility. It allows users to search for local businesses by keyword and location, extract real-time contact information, and export leads as a cleanly formatted CSV—complete with clickable Excel hyperlink formulas.
 
 No signups, no onboarding, no dashboard, no subscriptions. Just a fast developer-friendly utility.
