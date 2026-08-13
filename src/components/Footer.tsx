@@ -3,10 +3,10 @@ import { Github, Linkedin } from "lucide-react";
 export function Footer() {
   return (
     <footer className="w-full border-t border-gray-200 bg-white py-12 mt-auto">
-      <div className="mx-auto max-w-[1120px] px-4 sm:px-6 grid grid-cols-2 md:grid-cols-5 gap-8 text-xs text-gray-500">
+      <div className="mx-auto max-w-[1120px] px-4 sm:px-6 grid grid-cols-1 md:grid-cols-5 gap-8 text-xs text-gray-500">
         
         {/* Branding Column */}
-        <div className="col-span-2 flex flex-col gap-2.5 max-w-[280px]">
+        <div className="md:col-span-2 flex flex-col gap-2.5 max-w-[280px]">
           <div className="flex items-center gap-2">
             <img
               src="/logo.png"
@@ -64,40 +64,21 @@ export function Footer() {
             Legal
           </span>
           <div className="flex flex-col gap-2 font-medium">
-            <a href="/privacy" className="hover:text-black transition">
-              Privacy Policy
-            </a>
-            <a href="/terms" className="hover:text-black transition">
-              Terms of Service
-            </a>
-          </div>
-        </div>
-
-        {/* 4. Contact Column */}
-        <div className="flex flex-col gap-3 col-span-2 md:col-span-1">
-          <span className="font-bold text-gray-900 uppercase tracking-wider text-[10px]">
-            Contact
-          </span>
-          <div className="flex flex-col gap-2 font-medium">
             <a
-              href="mailto:devanshsingh2006@gmail.com?subject=Feature%20Suggestion"
-              className="hover:text-black transition"
-            >
-              Suggest a feature
-            </a>
-            <a
-              href="https://github.com/Devansh1974/free_map_scrapper/issues"
+              href="/privacypolicy"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-black transition"
             >
-              Report an issue
+              Privacy Policy
             </a>
             <a
-              href="mailto:devansh@freemapscrapper.com"
-              className="hover:text-black transition font-semibold text-neutral-800"
+              href="/terms"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-black transition"
             >
-              devansh@freemapscrapper.com
+              Terms of Service
             </a>
           </div>
         </div>

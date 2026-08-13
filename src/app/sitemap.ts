@@ -7,7 +7,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Static site paths
   const staticUrls = [
     "",
-    "/privacy",
+    "/privacypolicy",
     "/terms",
     "/faq",
     "/changelog",

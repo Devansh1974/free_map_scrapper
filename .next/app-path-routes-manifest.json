@@ -5,5 +5,10 @@
   "/blog/[slug]/page": "/blog/[slug]",
   "/blog/page": "/blog",
   "/icon.png/route": "/icon.png",
-  "/page": "/"
+  "/opengraph-image/route": "/opengraph-image",
+  "/page": "/",
+  "/privacypolicy/page": "/privacypolicy",
+  "/robots.txt/route": "/robots.txt",
+  "/sitemap.xml/route": "/sitemap.xml",
+  "/terms/page": "/terms"
 }

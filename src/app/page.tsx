@@ -198,7 +198,7 @@ export default function Home() {
               <EmptyState />
 
               {/* 1. Features Grid (4 metrics) */}
-              <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 mt-4">
+              <div id="features" className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 mt-4 scroll-mt-20">
                 <div className="rounded-xl border border-gray-200 bg-white p-5 flex items-start gap-4">
                   <div className="rounded-lg bg-neutral-50 border border-gray-200 p-2.5 text-neutral-800">
                     <CheckCircle2 className="h-5 w-5" />
@@ -283,7 +283,7 @@ export default function Home() {
               </div>
 
               {/* 3. How It Works */}
-              <div className="py-12 border-t border-gray-200 flex flex-col gap-8">
+              <div id="how-it-works" className="py-12 border-t border-gray-200 flex flex-col gap-8 scroll-mt-20">
                 <div className="text-center max-w-[600px] mx-auto flex flex-col gap-2">
                   <h3 className="text-2xl font-bold tracking-tight text-gray-950">How it works</h3>
                   <p className="text-sm text-gray-500">Get quality local business leads in 4 simple steps</p>
@@ -363,7 +363,7 @@ export default function Home() {
               </div>
 
               {/* 5. FAQ Section */}
-              <div className="py-12 border-t border-gray-200 flex flex-col md:flex-row gap-8">
+              <div id="faq" className="py-12 border-t border-gray-200 flex flex-col md:flex-row gap-8 scroll-mt-20">
                 <div className="md:w-1/3">
                   <h3 className="text-2xl font-bold tracking-tight text-gray-950">Frequently Asked Questions</h3>
                   <p className="text-xs text-gray-500 mt-2">Answers to common questions about data sources, lead accuracy, and search usage limits.</p>

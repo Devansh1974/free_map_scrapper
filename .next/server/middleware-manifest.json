@@ -2,5 +2,52 @@
   "version": 3,
   "middleware": {},
   "sortedMiddleware": [],
-  "functions": {}
+  "functions": {
+    "/opengraph-image/route": {
+      "files": [
+        "server/middleware-build-manifest.js",
+        "server/interception-route-rewrite-manifest.js",
+        "required-server-files.js",
+        "server/server-reference-manifest.js",
+        "server/app/opengraph-image/route_client-reference-manifest.js",
+        "server/edge/chunks/_next-internal_server_app_opengraph-image_route_actions_0as17aw.js",
+        "server/edge/chunks/[root-of-the-server]__04ybfe6._.js",
+        "server/edge/chunks/_1062dck._.js",
+        "server/edge/chunks/[root-of-the-server]__0167nzz._.js",
+        "server/edge/chunks/turbopack-node_modules_next_dist_esm_build_templates_edge-wrapper_068sctx.js"
+      ],
+      "name": "app/opengraph-image/route",
+      "page": "/opengraph-image/route",
+      "entrypoint": "server/edge/chunks/turbopack-node_modules_next_dist_esm_build_templates_edge-wrapper_068sctx.js",
+      "matchers": [
+        {
+          "regexp": "^/opengraph-image(?:/)?$",
+          "originalSource": "/opengraph-image"
+        }
+      ],
+      "wasm": [
+        {
+          "name": "wasm_10a187050363648b49a36c79d5266d2c",
+          "filePath": "server/edge/chunks/node_modules_next_dist_compiled_@vercel_og_yoga_0athij3.wasm"
+        },
+        {
+          "name": "wasm_151b7f7b511bd6dda63695d2c75c87a3",
+          "filePath": "server/edge/chunks/node_modules_next_dist_compiled_@vercel_og_resvg_0athij3.wasm"
+        }
+      ],
+      "assets": [
+        {
+          "name": "server/edge/assets/Geist-Regular.05-7db9wczy07.ttf",
+          "filePath": "server/edge/assets/Geist-Regular.05-7db9wczy07.ttf"
+        }
+      ],
+      "env": {
+        "__NEXT_BUILD_ID": "vkPpY4P8lZVu_yvmbsL80",
+        "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "yVK20HJVc5tajVEbHrWrFhTztLRibeFq++AbJafHJsY=",
+        "__NEXT_PREVIEW_MODE_ID": "2595f25ff8ba848fbc6bed027c81142e",
+        "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "a096bb59e1b7b300e049f07fe4d13d17ffc850788e507a9b617fea553aa01a7d",
+        "__NEXT_PREVIEW_MODE_SIGNING_KEY": "a54a293c2a39758d24484b78ddda518c6eaba563017bbacbd36419992bc7a688"
+      }
+    }
+  }
 }
