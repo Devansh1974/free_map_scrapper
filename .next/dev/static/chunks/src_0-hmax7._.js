@@ -2741,7 +2741,7 @@ function SearchForm({ onSearch, isLoading }) {
             showLimitAlert && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-[1px] p-4",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "w-full max-w-sm rounded-xl border border-neutral-250 bg-white p-6 shadow-xl flex flex-col gap-4",
+                    className: "w-full max-w-sm rounded-xl border border-neutral-200 bg-white p-6 shadow-xl flex flex-col gap-4",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "flex flex-col gap-1",
@@ -2761,6 +2761,25 @@ function SearchForm({ onSearch, isLoading }) {
                                     fileName: "[project]/src/components/SearchForm.tsx",
                                     lineNumber: 248,
                                     columnNumber: 15
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    className: "text-[10px] text-gray-400 mt-2",
+                                    children: [
+                                        "Or email directly at ",
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                            href: "mailto:devanshsingh1974@gmail.com",
+                                            className: "text-[#1A73E8] hover:underline font-medium",
+                                            children: "devanshsingh1974@gmail.com"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/SearchForm.tsx",
+                                            lineNumber: 252,
+                                            columnNumber: 38
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/components/SearchForm.tsx",
+                                    lineNumber: 251,
+                                    columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
@@ -2778,25 +2797,25 @@ function SearchForm({ onSearch, isLoading }) {
                                     children: "Close"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/SearchForm.tsx",
-                                    lineNumber: 253,
+                                    lineNumber: 256,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                    href: "mailto:devanshsingh2006@gmail.com?subject=FreeMapScrapper%20-%20Requesting%20Bulk%20Limit%20Access",
+                                    href: "https://www.linkedin.com/in/devanshsingh2006/",
                                     target: "_blank",
                                     rel: "noopener noreferrer",
                                     onClick: ()=>setShowLimitAlert(false),
                                     className: "inline-flex items-center justify-center h-9 px-4 rounded-lg bg-[#1A73E8] text-xs font-semibold text-white transition hover:bg-[#1557b0] focus:outline-none cursor-pointer",
-                                    children: "Contact Developer"
+                                    children: "Contact on LinkedIn"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/SearchForm.tsx",
-                                    lineNumber: 260,
+                                    lineNumber: 263,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/SearchForm.tsx",
-                            lineNumber: 252,
+                            lineNumber: 255,
                             columnNumber: 13
                         }, this)
                     ]

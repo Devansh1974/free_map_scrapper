@@ -240,13 +240,16 @@ export function SearchForm({ onSearch, isLoading }: SearchFormProps) {
 
       {showLimitAlert && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-[1px] p-4">
-          <div className="w-full max-w-sm rounded-xl border border-neutral-250 bg-white p-6 shadow-xl flex flex-col gap-4">
+          <div className="w-full max-w-sm rounded-xl border border-neutral-200 bg-white p-6 shadow-xl flex flex-col gap-4">
             <div className="flex flex-col gap-1">
               <h3 className="text-base font-bold text-gray-900">
                 Access Limit Exceeded
               </h3>
               <p className="text-xs text-gray-500 leading-relaxed mt-1">
                 To prevent heavy Google Places API billing charges, searches are capped under 50 leads per query. Please contact the developer for higher query access.
+              </p>
+              <p className="text-[10px] text-gray-400 mt-2">
+                Or email directly at <a href="mailto:devanshsingh1974@gmail.com" className="text-[#1A73E8] hover:underline font-medium">devanshsingh1974@gmail.com</a>
               </p>
             </div>
             <div className="flex items-center justify-end gap-2.5 mt-2">
@@ -258,13 +261,13 @@ export function SearchForm({ onSearch, isLoading }: SearchFormProps) {
                 Close
               </button>
               <a
-                href="mailto:devanshsingh2006@gmail.com?subject=FreeMapScrapper%20-%20Requesting%20Bulk%20Limit%20Access"
+                href="https://www.linkedin.com/in/devanshsingh2006/"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setShowLimitAlert(false)}
                 className="inline-flex items-center justify-center h-9 px-4 rounded-lg bg-[#1A73E8] text-xs font-semibold text-white transition hover:bg-[#1557b0] focus:outline-none cursor-pointer"
               >
-                Contact Developer
+                Contact on LinkedIn
               </a>
             </div>
           </div>
