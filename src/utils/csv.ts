@@ -11,8 +11,15 @@ export function exportToCSV(
     enrichResults?: boolean;
   }
 ) {
+  // Helper to format URLs as clickable spreadsheet HYPERLINK formulas
+  const makeHyperlink = (url: string | undefined) => {
+    if (!url) return "";
+    const escapedUrl = url.replace(/"/g, '""');
+    return `=HYPERLINK("${escapedUrl}", "${escapedUrl}")`;
+  };
+
   // Build header row
-  const headers = ["Name", "Type", "Address"];
+  const headers = ["#", "Name", "Type", "Address"];
   if (options.includePhone) headers.push("Phone");
   if (options.includeWebsite) headers.push("Website");
   if (options.includeRating) {
@@ -44,26 +51,27 @@ export function exportToCSV(
   };
 
   // Build content rows
-  const rows = results.map((biz) => {
+  const rows = results.map((biz, index) => {
     const row = [
+      (index + 1).toString(),
       escapeCSV(biz.name),
       escapeCSV(biz.type || ""),
       escapeCSV(biz.address || ""),
     ];
     if (options.includePhone) row.push(escapeCSV(biz.phone || ""));
-    if (options.includeWebsite) row.push(escapeCSV(biz.website || ""));
+    if (options.includeWebsite) row.push(escapeCSV(makeHyperlink(biz.website)));
     if (options.includeRating) {
       row.push(escapeCSV(biz.rating !== undefined ? biz.rating.toString() : ""));
       row.push(escapeCSV(biz.reviews !== undefined ? biz.reviews.toString() : ""));
     }
     if (options.enrichResults) {
-      row.push(escapeCSV(biz.email || ""));
-      row.push(escapeCSV(biz.instagram || ""));
-      row.push(escapeCSV(biz.facebook || ""));
-      row.push(escapeCSV(biz.whatsapp || ""));
-      row.push(escapeCSV(biz.contactPage || ""));
+      row.push(escapeCSV(biz.email ? `=HYPERLINK("mailto:${biz.email}", "${biz.email}")` : ""));
+      row.push(escapeCSV(makeHyperlink(biz.instagram)));
+      row.push(escapeCSV(makeHyperlink(biz.facebook)));
+      row.push(escapeCSV(makeHyperlink(biz.whatsapp)));
+      row.push(escapeCSV(makeHyperlink(biz.contactPage)));
     }
-    row.push(escapeCSV(biz.mapsUrl || ""));
+    row.push(escapeCSV(makeHyperlink(biz.mapsUrl)));
     return row.join(",");
   });
 

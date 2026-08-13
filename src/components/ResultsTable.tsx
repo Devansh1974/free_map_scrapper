@@ -16,8 +16,11 @@ export function ResultsTable({ results, options }: ResultsTableProps) {
     <div className="w-full overflow-hidden rounded-xl border border-gray-200 bg-white">
       <div className="max-h-[600px] overflow-auto">
         <table className="w-full border-collapse text-left text-sm text-gray-600">
-          <thead className="sticky top-0 z-10 border-b border-gray-200 bg-gray-50 text-xs font-semibold uppercase tracking-wider text-gray-500">
+          <thead className="sticky top-0 z-10 border-b border-gray-200 bg-slate-50 text-xs font-semibold uppercase tracking-wider text-gray-500">
             <tr>
+              <th scope="col" className="px-4 py-3 font-semibold text-gray-700 w-12 text-center">
+                #
+              </th>
               <th scope="col" className="px-6 py-3 font-semibold text-gray-700">
                 Name
               </th>
@@ -67,8 +70,11 @@ export function ResultsTable({ results, options }: ResultsTableProps) {
             </tr>
           </thead>
           <tbody className="divide-y divide-gray-100 bg-white">
-            {results.map((biz) => (
-              <tr key={biz.id} className="hover:bg-gray-50/50">
+            {results.map((biz, index) => (
+              <tr key={biz.id} className="hover:bg-indigo-50/30 even:bg-slate-50/40 transition-colors">
+                <td className="px-4 py-4 font-medium text-gray-400 text-center w-12">
+                  {index + 1}
+                </td>
                 <td className="px-6 py-4 font-semibold text-gray-900 whitespace-nowrap">
                   {biz.name}
                 </td>

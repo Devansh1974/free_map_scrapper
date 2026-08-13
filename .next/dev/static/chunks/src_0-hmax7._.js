@@ -37,19 +37,68 @@ function Home() {
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
                 className: "flex-1 w-full max-w-[1120px] mx-auto px-4 sm:px-6 py-8 flex flex-col gap-6",
                 children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "text-center py-6 md:py-10 max-w-[800px] mx-auto flex flex-col items-center gap-4",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                className: "inline-flex items-center gap-1.5 rounded-full bg-neutral-100 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-neutral-800 border border-neutral-200",
+                                children: "FREE • NO SIGNUP • REAL DATA"
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/page.tsx",
+                                lineNumber: 29,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                                className: "text-3xl font-extrabold tracking-tight text-neutral-900 sm:text-4xl md:text-5xl",
+                                children: [
+                                    "Find Local Businesses.",
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                                        fileName: "[project]/src/app/page.tsx",
+                                        lineNumber: 33,
+                                        columnNumber: 35
+                                    }, this),
+                                    "Get Real Leads."
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/app/page.tsx",
+                                lineNumber: 32,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "text-base text-neutral-500 max-w-[640px] sm:text-lg",
+                                children: "Search Google Maps, extract contact information, and export results in seconds. Emails, phones, websites, and social profiles in one place."
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/page.tsx",
+                                lineNumber: 35,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "text-sm font-medium text-neutral-400 italic",
+                                children: '"Find businesses. Get contacts. Build opportunities."'
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/page.tsx",
+                                lineNumber: 38,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/app/page.tsx",
+                        lineNumber: 28,
+                        columnNumber: 9
+                    }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$SearchForm$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SearchForm"], {
                         onSearch: handleSearch,
                         isLoading: isLoading
                     }, void 0, false, {
                         fileName: "[project]/src/app/page.tsx",
-                        lineNumber: 28,
+                        lineNumber: 44,
                         columnNumber: 9
                     }, this),
                     error && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$States$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["ErrorBanner"], {
                         message: error
                     }, void 0, false, {
                         fileName: "[project]/src/app/page.tsx",
-                        lineNumber: 31,
+                        lineNumber: 47,
                         columnNumber: 19
                     }, this),
                     results !== null ? results.length > 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -61,7 +110,7 @@ function Home() {
                                 onClear: handleClear
                             }, void 0, false, {
                                 fileName: "[project]/src/app/page.tsx",
-                                lineNumber: 37,
+                                lineNumber: 53,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ResultsTable$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["ResultsTable"], {
@@ -69,13 +118,13 @@ function Home() {
                                 options: activeOptions
                             }, void 0, false, {
                                 fileName: "[project]/src/app/page.tsx",
-                                lineNumber: 42,
+                                lineNumber: 58,
                                 columnNumber: 15
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/page.tsx",
-                        lineNumber: 36,
+                        lineNumber: 52,
                         columnNumber: 13
                     }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "flex flex-col items-center justify-center rounded-xl border border-dashed border-gray-200 bg-white py-16 text-center",
@@ -85,7 +134,7 @@ function Home() {
                                 children: "No businesses found"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/page.tsx",
-                                lineNumber: 46,
+                                lineNumber: 62,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -93,17 +142,17 @@ function Home() {
                                 children: "Try widening your search keyword or changing the location."
                             }, void 0, false, {
                                 fileName: "[project]/src/app/page.tsx",
-                                lineNumber: 47,
+                                lineNumber: 63,
                                 columnNumber: 15
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/page.tsx",
-                        lineNumber: 45,
+                        lineNumber: 61,
                         columnNumber: 13
                     }, this) : !isLoading && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$States$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["EmptyState"], {}, void 0, false, {
                         fileName: "[project]/src/app/page.tsx",
-                        lineNumber: 53,
+                        lineNumber: 69,
                         columnNumber: 25
                     }, this)
                 ]
@@ -114,7 +163,7 @@ function Home() {
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Footer$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Footer"], {}, void 0, false, {
                 fileName: "[project]/src/app/page.tsx",
-                lineNumber: 56,
+                lineNumber: 72,
                 columnNumber: 7
             }, this)
         ]
@@ -144,51 +193,140 @@ __turbopack_context__.s([
     ()=>Footer
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$github$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Github$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/github.js [app-client] (ecmascript) <export default as Github>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$linkedin$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Linkedin$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/linkedin.js [app-client] (ecmascript) <export default as Linkedin>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mail$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Mail$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/mail.js [app-client] (ecmascript) <export default as Mail>");
+;
 ;
 function Footer() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("footer", {
         className: "w-full border-t border-gray-200 bg-white py-8 mt-auto",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "mx-auto flex max-w-[1120px] flex-col sm:flex-row sm:items-center sm:justify-between gap-4 px-4 sm:px-6 text-xs text-gray-500",
+            className: "mx-auto flex max-w-[1120px] flex-col sm:flex-row sm:items-center sm:justify-between gap-6 px-4 sm:px-6 text-xs text-gray-500",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    children: "FreeMapScrapper · Simple Google Maps business export utility"
-                }, void 0, false, {
-                    fileName: "[project]/src/components/Footer.tsx",
-                    lineNumber: 5,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "flex items-center gap-1 font-medium text-gray-700",
+                    className: "flex flex-col gap-1.5",
                     children: [
-                        "Built with",
-                        " ",
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                            href: "https://nextjs.org",
-                            target: "_blank",
-                            rel: "noopener noreferrer",
-                            className: "text-black hover:underline",
-                            children: "Next.js"
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "font-semibold text-gray-800 text-sm",
+                            children: "FreeMapScrapper"
                         }, void 0, false, {
                             fileName: "[project]/src/components/Footer.tsx",
-                            lineNumber: 10,
+                            lineNumber: 8,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "italic text-gray-400",
+                            children: "Find businesses. Get contacts. Build opportunities."
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/Footer.tsx",
+                            lineNumber: 11,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/Footer.tsx",
-                    lineNumber: 8,
+                    lineNumber: 7,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "flex flex-col sm:items-end gap-2 text-gray-600",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "flex items-center gap-1 font-medium",
+                            children: [
+                                "Made by",
+                                " ",
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                    className: "font-semibold text-black",
+                                    children: "Devansh Singh"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/Footer.tsx",
+                                    lineNumber: 19,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/src/components/Footer.tsx",
+                            lineNumber: 17,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "flex items-center gap-4 text-gray-400",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                    href: "https://github.com/Devansh1974",
+                                    target: "_blank",
+                                    rel: "noopener noreferrer",
+                                    className: "hover:text-black transition",
+                                    title: "GitHub",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$github$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Github$3e$__["Github"], {
+                                        className: "h-4 w-4"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/Footer.tsx",
+                                        lineNumber: 29,
+                                        columnNumber: 15
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/Footer.tsx",
+                                    lineNumber: 22,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                    href: "https://www.linkedin.com/in/devanshsingh2006/",
+                                    target: "_blank",
+                                    rel: "noopener noreferrer",
+                                    className: "hover:text-black transition",
+                                    title: "LinkedIn",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$linkedin$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Linkedin$3e$__["Linkedin"], {
+                                        className: "h-4 w-4"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/Footer.tsx",
+                                        lineNumber: 38,
+                                        columnNumber: 15
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/Footer.tsx",
+                                    lineNumber: 31,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                    href: "mailto:devanshsingh2006@gmail.com",
+                                    className: "hover:text-black transition",
+                                    title: "Email",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mail$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Mail$3e$__["Mail"], {
+                                        className: "h-4 w-4"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/Footer.tsx",
+                                        lineNumber: 45,
+                                        columnNumber: 15
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/Footer.tsx",
+                                    lineNumber: 40,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/src/components/Footer.tsx",
+                            lineNumber: 21,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/src/components/Footer.tsx",
+                    lineNumber: 16,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/Footer.tsx",
-            lineNumber: 4,
+            lineNumber: 6,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/Footer.tsx",
-        lineNumber: 3,
+        lineNumber: 5,
         columnNumber: 5
     }, this);
 }
@@ -219,16 +357,10 @@ function Navbar() {
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "flex items-center gap-3",
                     children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "flex h-8 w-8 items-center justify-center rounded-[6px] border-2 border-black bg-white",
-                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: "font-mono text-xs font-black text-black",
-                                children: "F"
-                            }, void 0, false, {
-                                fileName: "[project]/src/components/Navbar.tsx",
-                                lineNumber: 10,
-                                columnNumber: 13
-                            }, this)
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                            src: "/logo.png",
+                            alt: "FreeMapScrapper Logo",
+                            className: "h-8 w-8 rounded-[6px] object-cover"
                         }, void 0, false, {
                             fileName: "[project]/src/components/Navbar.tsx",
                             lineNumber: 9,
@@ -239,7 +371,7 @@ function Navbar() {
                             children: "FreeMapScrapper"
                         }, void 0, false, {
                             fileName: "[project]/src/components/Navbar.tsx",
-                            lineNumber: 12,
+                            lineNumber: 14,
                             columnNumber: 11
                         }, this)
                     ]
@@ -259,17 +391,17 @@ function Navbar() {
                             className: "h-4 w-4"
                         }, void 0, false, {
                             fileName: "[project]/src/components/Navbar.tsx",
-                            lineNumber: 24,
+                            lineNumber: 26,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/Navbar.tsx",
-                        lineNumber: 17,
+                        lineNumber: 19,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/Navbar.tsx",
-                    lineNumber: 16,
+                    lineNumber: 18,
                     columnNumber: 9
                 }, this)
             ]
@@ -311,13 +443,13 @@ function ResultsTable({ results, options }) {
                 className: "w-full border-collapse text-left text-sm text-gray-600",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("thead", {
-                        className: "sticky top-0 z-10 border-b border-gray-200 bg-gray-50 text-xs font-semibold uppercase tracking-wider text-gray-500",
+                        className: "sticky top-0 z-10 border-b border-gray-200 bg-slate-50 text-xs font-semibold uppercase tracking-wider text-gray-500",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
                                     scope: "col",
-                                    className: "px-6 py-3 font-semibold text-gray-700",
-                                    children: "Name"
+                                    className: "px-4 py-3 font-semibold text-gray-700 w-12 text-center",
+                                    children: "#"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/ResultsTable.tsx",
                                     lineNumber: 21,
@@ -326,7 +458,7 @@ function ResultsTable({ results, options }) {
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
                                     scope: "col",
                                     className: "px-6 py-3 font-semibold text-gray-700",
-                                    children: "Type"
+                                    children: "Name"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/ResultsTable.tsx",
                                     lineNumber: 24,
@@ -335,10 +467,19 @@ function ResultsTable({ results, options }) {
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
                                     scope: "col",
                                     className: "px-6 py-3 font-semibold text-gray-700",
-                                    children: "Address"
+                                    children: "Type"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/ResultsTable.tsx",
                                     lineNumber: 27,
+                                    columnNumber: 15
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
+                                    scope: "col",
+                                    className: "px-6 py-3 font-semibold text-gray-700",
+                                    children: "Address"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/ResultsTable.tsx",
+                                    lineNumber: 30,
                                     columnNumber: 15
                                 }, this),
                                 options.includePhone && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -347,7 +488,7 @@ function ResultsTable({ results, options }) {
                                     children: "Phone"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/ResultsTable.tsx",
-                                    lineNumber: 31,
+                                    lineNumber: 34,
                                     columnNumber: 17
                                 }, this),
                                 options.includeWebsite && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -356,7 +497,7 @@ function ResultsTable({ results, options }) {
                                     children: "Website"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/ResultsTable.tsx",
-                                    lineNumber: 36,
+                                    lineNumber: 39,
                                     columnNumber: 17
                                 }, this),
                                 options.includeRating && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -365,7 +506,7 @@ function ResultsTable({ results, options }) {
                                     children: "Rating"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/ResultsTable.tsx",
-                                    lineNumber: 41,
+                                    lineNumber: 44,
                                     columnNumber: 17
                                 }, this),
                                 options.enrichResults && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
@@ -376,7 +517,7 @@ function ResultsTable({ results, options }) {
                                             children: "Email"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/ResultsTable.tsx",
-                                            lineNumber: 47,
+                                            lineNumber: 50,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -385,7 +526,7 @@ function ResultsTable({ results, options }) {
                                             children: "Instagram"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/ResultsTable.tsx",
-                                            lineNumber: 50,
+                                            lineNumber: 53,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -394,7 +535,7 @@ function ResultsTable({ results, options }) {
                                             children: "Facebook"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/ResultsTable.tsx",
-                                            lineNumber: 53,
+                                            lineNumber: 56,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -403,7 +544,7 @@ function ResultsTable({ results, options }) {
                                             children: "WhatsApp"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/ResultsTable.tsx",
-                                            lineNumber: 56,
+                                            lineNumber: 59,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -412,13 +553,13 @@ function ResultsTable({ results, options }) {
                                             children: "Contact Us"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/ResultsTable.tsx",
-                                            lineNumber: 59,
+                                            lineNumber: 62,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/ResultsTable.tsx",
-                                    lineNumber: 46,
+                                    lineNumber: 49,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -427,7 +568,7 @@ function ResultsTable({ results, options }) {
                                     children: "Maps"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/ResultsTable.tsx",
-                                    lineNumber: 64,
+                                    lineNumber: 67,
                                     columnNumber: 15
                                 }, this)
                             ]
@@ -443,15 +584,23 @@ function ResultsTable({ results, options }) {
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tbody", {
                         className: "divide-y divide-gray-100 bg-white",
-                        children: results.map((biz)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
-                                className: "hover:bg-gray-50/50",
+                        children: results.map((biz, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
+                                className: "hover:bg-indigo-50/30 even:bg-slate-50/40 transition-colors",
                                 children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
+                                        className: "px-4 py-4 font-medium text-gray-400 text-center w-12",
+                                        children: index + 1
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/ResultsTable.tsx",
+                                        lineNumber: 75,
+                                        columnNumber: 17
+                                    }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
                                         className: "px-6 py-4 font-semibold text-gray-900 whitespace-nowrap",
                                         children: biz.name
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/ResultsTable.tsx",
-                                        lineNumber: 72,
+                                        lineNumber: 78,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -459,7 +608,7 @@ function ResultsTable({ results, options }) {
                                         children: biz.type || "—"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/ResultsTable.tsx",
-                                        lineNumber: 75,
+                                        lineNumber: 81,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -467,7 +616,7 @@ function ResultsTable({ results, options }) {
                                         children: biz.address || "—"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/ResultsTable.tsx",
-                                        lineNumber: 78,
+                                        lineNumber: 84,
                                         columnNumber: 17
                                     }, this),
                                     options.includePhone && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -478,12 +627,12 @@ function ResultsTable({ results, options }) {
                                             children: biz.phone
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/ResultsTable.tsx",
-                                            lineNumber: 84,
+                                            lineNumber: 90,
                                             columnNumber: 23
                                         }, this) : "—"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/ResultsTable.tsx",
-                                        lineNumber: 82,
+                                        lineNumber: 88,
                                         columnNumber: 19
                                     }, this),
                                     options.includeWebsite && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -497,12 +646,12 @@ function ResultsTable({ results, options }) {
                                             children: biz.website.replace(/^https?:\/\/(www\.)?/, "")
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/ResultsTable.tsx",
-                                            lineNumber: 98,
+                                            lineNumber: 104,
                                             columnNumber: 23
                                         }, this) : "—"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/ResultsTable.tsx",
-                                        lineNumber: 96,
+                                        lineNumber: 102,
                                         columnNumber: 19
                                     }, this),
                                     options.includeRating && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -519,18 +668,18 @@ function ResultsTable({ results, options }) {
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/ResultsTable.tsx",
-                                                    lineNumber: 118,
+                                                    lineNumber: 124,
                                                     columnNumber: 27
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/ResultsTable.tsx",
-                                            lineNumber: 115,
+                                            lineNumber: 121,
                                             columnNumber: 23
                                         }, this) : "—"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/ResultsTable.tsx",
-                                        lineNumber: 113,
+                                        lineNumber: 119,
                                         columnNumber: 19
                                     }, this),
                                     options.enrichResults && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
@@ -543,12 +692,12 @@ function ResultsTable({ results, options }) {
                                                     children: biz.email
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/ResultsTable.tsx",
-                                                    lineNumber: 132,
+                                                    lineNumber: 138,
                                                     columnNumber: 25
                                                 }, this) : "—"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/ResultsTable.tsx",
-                                                lineNumber: 130,
+                                                lineNumber: 136,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -564,18 +713,18 @@ function ResultsTable({ results, options }) {
                                                             className: "h-3 w-3 text-gray-400"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/ResultsTable.tsx",
-                                                            lineNumber: 151,
+                                                            lineNumber: 157,
                                                             columnNumber: 27
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/ResultsTable.tsx",
-                                                    lineNumber: 144,
+                                                    lineNumber: 150,
                                                     columnNumber: 25
                                                 }, this) : "—"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/ResultsTable.tsx",
-                                                lineNumber: 142,
+                                                lineNumber: 148,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -591,18 +740,18 @@ function ResultsTable({ results, options }) {
                                                             className: "h-3 w-3 text-gray-400"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/ResultsTable.tsx",
-                                                            lineNumber: 166,
+                                                            lineNumber: 172,
                                                             columnNumber: 27
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/ResultsTable.tsx",
-                                                    lineNumber: 159,
+                                                    lineNumber: 165,
                                                     columnNumber: 25
                                                 }, this) : "—"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/ResultsTable.tsx",
-                                                lineNumber: 157,
+                                                lineNumber: 163,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -618,18 +767,18 @@ function ResultsTable({ results, options }) {
                                                             className: "h-3 w-3 text-gray-400"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/ResultsTable.tsx",
-                                                            lineNumber: 181,
+                                                            lineNumber: 187,
                                                             columnNumber: 27
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/ResultsTable.tsx",
-                                                    lineNumber: 174,
+                                                    lineNumber: 180,
                                                     columnNumber: 25
                                                 }, this) : "—"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/ResultsTable.tsx",
-                                                lineNumber: 172,
+                                                lineNumber: 178,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -645,24 +794,24 @@ function ResultsTable({ results, options }) {
                                                             className: "h-3 w-3 text-gray-400"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/ResultsTable.tsx",
-                                                            lineNumber: 196,
+                                                            lineNumber: 202,
                                                             columnNumber: 27
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/ResultsTable.tsx",
-                                                    lineNumber: 189,
+                                                    lineNumber: 195,
                                                     columnNumber: 25
                                                 }, this) : "—"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/ResultsTable.tsx",
-                                                lineNumber: 187,
+                                                lineNumber: 193,
                                                 columnNumber: 21
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/ResultsTable.tsx",
-                                        lineNumber: 129,
+                                        lineNumber: 135,
                                         columnNumber: 19
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -678,29 +827,29 @@ function ResultsTable({ results, options }) {
                                                     className: "h-3 w-3 text-gray-400"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/ResultsTable.tsx",
-                                                    lineNumber: 213,
+                                                    lineNumber: 219,
                                                     columnNumber: 23
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/ResultsTable.tsx",
-                                            lineNumber: 206,
+                                            lineNumber: 212,
                                             columnNumber: 21
                                         }, this) : "—"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/ResultsTable.tsx",
-                                        lineNumber: 204,
+                                        lineNumber: 210,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, biz.id, true, {
                                 fileName: "[project]/src/components/ResultsTable.tsx",
-                                lineNumber: 71,
+                                lineNumber: 74,
                                 columnNumber: 15
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/src/components/ResultsTable.tsx",
-                        lineNumber: 69,
+                        lineNumber: 72,
                         columnNumber: 11
                     }, this)
                 ]
@@ -1458,8 +1607,15 @@ __turbopack_context__.s([
     ()=>exportToCSV
 ]);
 function exportToCSV(results, query, location, options) {
+    // Helper to format URLs as clickable spreadsheet HYPERLINK formulas
+    const makeHyperlink = (url)=>{
+        if (!url) return "";
+        const escapedUrl = url.replace(/"/g, '""');
+        return `=HYPERLINK("${escapedUrl}", "${escapedUrl}")`;
+    };
     // Build header row
     const headers = [
+        "#",
         "Name",
         "Type",
         "Address"
@@ -1488,26 +1644,27 @@ function exportToCSV(results, query, location, options) {
         return strValue;
     };
     // Build content rows
-    const rows = results.map((biz)=>{
+    const rows = results.map((biz, index)=>{
         const row = [
+            (index + 1).toString(),
             escapeCSV(biz.name),
             escapeCSV(biz.type || ""),
             escapeCSV(biz.address || "")
         ];
         if (options.includePhone) row.push(escapeCSV(biz.phone || ""));
-        if (options.includeWebsite) row.push(escapeCSV(biz.website || ""));
+        if (options.includeWebsite) row.push(escapeCSV(makeHyperlink(biz.website)));
         if (options.includeRating) {
             row.push(escapeCSV(biz.rating !== undefined ? biz.rating.toString() : ""));
             row.push(escapeCSV(biz.reviews !== undefined ? biz.reviews.toString() : ""));
         }
         if (options.enrichResults) {
-            row.push(escapeCSV(biz.email || ""));
-            row.push(escapeCSV(biz.instagram || ""));
-            row.push(escapeCSV(biz.facebook || ""));
-            row.push(escapeCSV(biz.whatsapp || ""));
-            row.push(escapeCSV(biz.contactPage || ""));
+            row.push(escapeCSV(biz.email ? `=HYPERLINK("mailto:${biz.email}", "${biz.email}")` : ""));
+            row.push(escapeCSV(makeHyperlink(biz.instagram)));
+            row.push(escapeCSV(makeHyperlink(biz.facebook)));
+            row.push(escapeCSV(makeHyperlink(biz.whatsapp)));
+            row.push(escapeCSV(makeHyperlink(biz.contactPage)));
         }
-        row.push(escapeCSV(biz.mapsUrl || ""));
+        row.push(escapeCSV(makeHyperlink(biz.mapsUrl)));
         return row.join(",");
     });
     const csvContent = "\uFEFF" + [

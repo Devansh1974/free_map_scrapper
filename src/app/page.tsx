@@ -24,6 +24,22 @@ export default function Home() {
     <>
       <Navbar />
       <main className="flex-1 w-full max-w-[1120px] mx-auto px-4 sm:px-6 py-8 flex flex-col gap-6">
+        {/* Hero Section */}
+        <div className="text-center py-6 md:py-10 max-w-[800px] mx-auto flex flex-col items-center gap-4">
+          <span className="inline-flex items-center gap-1.5 rounded-full bg-neutral-100 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-neutral-800 border border-neutral-200">
+            FREE &bull; NO SIGNUP &bull; REAL DATA
+          </span>
+          <h1 className="text-3xl font-extrabold tracking-tight text-neutral-900 sm:text-4xl md:text-5xl">
+            Find Local Businesses.<br />Get Real Leads.
+          </h1>
+          <p className="text-base text-neutral-500 max-w-[640px] sm:text-lg">
+            Search Google Maps, extract contact information, and export results in seconds. Emails, phones, websites, and social profiles in one place.
+          </p>
+          <div className="text-sm font-medium text-neutral-400 italic">
+            "Find businesses. Get contacts. Build opportunities."
+          </div>
+        </div>
+
         {/* Search Card Section */}
         <SearchForm onSearch={handleSearch} isLoading={isLoading} />
 

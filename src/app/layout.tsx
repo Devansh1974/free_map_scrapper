@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "FreeMapScrapper — Google Maps Business Lead Finder",
-  description: "Search and export Google Maps business listings to CSV instantly.",
+  title: "Find Local Businesses. Get Real Leads. | FreeMapScrapper",
+  description: "Search Google Maps, extract contact information, and export results in seconds. Emails, phones, websites, and social profiles in one place. Find businesses. Get contacts. Build opportunities.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
