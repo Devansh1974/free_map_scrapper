@@ -52,7 +52,12 @@ export function Footer() {
             <a href="/blog" className="hover:text-black transition">
               Blog / Guides
             </a>
-            <a href="/changelog" className="hover:text-black transition">
+            <a
+              href="/changelog"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-black transition"
+            >
               Changelog
             </a>
           </div>
@@ -88,7 +93,7 @@ export function Footer() {
       {/* Copyright & Founder social connection bar */}
       <div className="mx-auto max-w-[1120px] px-4 sm:px-6 mt-10 pt-6 border-t border-gray-100 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 text-[10px] text-gray-400">
         <div>
-          Built with Next.js by <span className="font-semibold text-neutral-800">Devansh Singh</span>. &copy; {new Date().getFullYear()} FreeMapScrapper. All rights reserved.
+          By <span className="font-semibold text-neutral-800">Devansh Singh</span>. &copy; {new Date().getFullYear()} FreeMapScrapper. All rights reserved.
         </div>
         <div className="flex items-center gap-3">
           <a

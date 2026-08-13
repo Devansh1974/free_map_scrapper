@@ -4,6 +4,7 @@
   "/api/search/route": "app/api/search/route.js",
   "/blog/[slug]/page": "app/blog/[slug]/page.js",
   "/blog/page": "app/blog/page.js",
+  "/changelog/page": "app/changelog/page.js",
   "/icon.png/route": "app/icon.png/route.js",
   "/opengraph-image/route": "app-edge-has-no-entrypoint",
   "/page": "app/page.js",
