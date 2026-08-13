@@ -21,7 +21,7 @@ interface SearchFormProps {
 export function SearchForm({ onSearch, isLoading }: SearchFormProps) {
   const [query, setQuery] = useState("");
   const [location, setLocation] = useState("");
-  const [limit, setLimit] = useState(20);
+  const [limit, setLimit] = useState(5);
   const [isCustom, setIsCustom] = useState(false);
   const [customLimit, setCustomLimit] = useState("15");
   const [includeWebsite, setIncludeWebsite] = useState(true);
