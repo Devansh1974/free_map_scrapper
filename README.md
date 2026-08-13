@@ -1,36 +1,112 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# FreeMapScrapper
 
-## Getting Started
+**Find Local Businesses. Get Real Leads. Build Opportunities.**
 
-First, run the development server:
+FreeMapScrapper is a lightweight, open-source Google Maps business export utility. It allows users to search for local businesses by keyword and location, extract real-time contact information, and export leads as a cleanly formatted CSV—complete with clickable Excel hyperlink formulas.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+No signups, no onboarding, no dashboard, no subscriptions. Just a fast developer-friendly utility.
+
+---
+
+## 🚀 Key Features
+
+- **Google Places API (New) Integration**: Queries real Google Maps database records using modern Places v1 endpoints.
+- **Concurrent Place Details Retrieval**: Uses promise pools to execute Details endpoints in parallel without hitting quota blocks.
+- **Free Website Profile Enrichment**: Scrapes business homepages and contact subpages for contact details (Emails, Instagram, Facebook, and WhatsApp links) for free—no paid scrapers or heavy browser instances required.
+- **Formattable CSV Exporter**: Generates `.csv` sheets with precompiled Excel `=HYPERLINK` formulas so URLs are clickable.
+- **Clean Notion/Linear-like Aesthetic**: Light theme with alternating slate borders and minimal spacing.
+
+---
+
+## 🛠️ Tech Stack & Dependencies
+
+- **Framework**: [Next.js 15 (App Router)](https://nextjs.org/)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **CSS / Styling**: [Tailwind CSS v4](https://tailwindcss.com/) & [Lucide Icons](https://lucide.dev/)
+- **HTML Parsing / Scraping**: [Cheerio](https://cheerio.js.org/) (for lightweight homepage parsing)
+- **Concurrency Pool**: [p-limit](https://github.com/sindresorhus/p-limit) (manages Details and scraping concurrency)
+- **Validation**: [Zod](https://zod.dev/) (safeguards query parameter schema parsing)
+
+---
+
+## ⚙️ How the Pipeline Works
+
+FreeMapScrapper separates the search process into three concurrent pipeline stages:
+
+```mermaid
+graph TD
+    A[User Search] --> B[Zod Schema Validation]
+    B --> C[1. Text Search API]
+    C -->|Fetch nextPageToken| D[Collect Place IDs]
+    D --> E[2. Fetch Place Details concurrently p-limit: 5]
+    E --> F{Enrichment Active?}
+    F -->|No| G[Return V1 Results]
+    F -->|Yes| H[3. Scrape Website Home & Contact Pages p-limit: 5]
+    H --> I[Regex Email & Social Extraction]
+    I --> J[Return Enriched V2 Results]
+    G --> K[Export Clickable CSV]
+    J --> K
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. **Text Search Loop**:
+   - Compiles search keywords into queries (e.g. `dentist in Indiranagar, Bengaluru`).
+   - Recursively resolves page tokens up to the requested result count (limit: 5, 10, 20, 30, 50, 70, 100, or Custom).
+2. **Details Fetch Pool**:
+   - Queries `https://places.googleapis.com/v1/places/{placeId}` for each business.
+   - Restricts concurrent requests to **5** using `p-limit` to prevent request blocks or heavy memory overhead.
+3. **Cheerio Scraping & Regular Expression Matching**:
+   - If enrichment is toggled on, reads the target website home page.
+   - Uses **Cheerio** to load HTML, extracts anchors with `mailto:`, parses href tags for social matches (Facebook, Instagram, WhatsApp).
+   - Scans body text with regex to identify emails, filtering out False Positives (like `.png`, `.jpg`, `.js`, etc.).
+   - If no emails are found on the homepage, scans for a parsed contact link (e.g., `/contact-us`, `/about`) and scrapes that subpage as a secondary fallback.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 💻 Local Setup
 
-## Learn More
+### Prerequisite: Google Cloud Setup
+1. Enable the **Places API (New)** in your [Google Cloud Console](https://console.cloud.google.com/).
+2. Generate an API Key under **Credentials**.
+3. Create a `.env.local` file in the root directory:
+   ```env
+   GOOGLE_MAPS_API_KEY=your_google_maps_api_key_here
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+### Running Locally
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+2. Start the hot-reload Next.js dev server:
+   ```bash
+   npm run dev
+   ```
+3. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🤝 Contributing
 
-## Deploy on Vercel
+Contributions are welcome! Please follow these guidelines:
+1. Fork this repository.
+2. Create a branch (`feature/your-feature-name`).
+3. Maintain TypeScript interfaces and enforce strict validation models in Zod.
+4. Ensure all changes are backward-compatible (if enrichment is off, the app must run exactly as V1).
+5. Compile and test the build before submitting a Pull Request:
+   ```bash
+   npm run build
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 👥 Connect with the Founder
+
+FreeMapScrapper is built and maintained by **Devansh Singh**. If you have ideas, feedback, or want to contribute to the roadmap, connect with the founder!
+
+- **LinkedIn**: [Devansh Singh](https://www.linkedin.com/in/devanshsingh2006/)
+- **GitHub**: [@Devansh1974](https://github.com/Devansh1974)
+- **Email**: [devanshsingh2006@gmail.com](mailto:devanshsingh2006@gmail.com)
+
+---
+
+**Find businesses. Get contacts. Build opportunities.**
