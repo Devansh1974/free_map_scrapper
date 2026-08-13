@@ -13,8 +13,39 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Find Local Businesses. Get Real Leads. | FreeMapScrapper",
-  description: "Search Google Maps, extract contact information, and export results in seconds. Emails, phones, websites, and social profiles in one place. Find businesses. Get contacts. Build opportunities.",
+  metadataBase: new URL("https://freemapscrapper.com"),
+  title: "FreeMapScrapper — Find Local Businesses & Export Real Leads",
+  description: "Search Google Maps, extract emails, phones, websites, and social profiles, and export clean CSV lead lists in seconds. No signup required.",
+  keywords: [
+    "google maps scraper",
+    "business leads",
+    "local lead finder",
+    "email extraction",
+    "google maps contacts",
+    "csv export",
+    "salon leads",
+    "dentist leads",
+    "restaurant leads",
+    "gym leads",
+    "local business data"
+  ],
+  openGraph: {
+    title: "FreeMapScrapper — Find Local Businesses & Export Real Leads",
+    description: "Search Google Maps, extract emails, phones, websites, and social profiles, and export clean CSV lead lists in seconds. No signup required.",
+    siteName: "FreeMapScrapper",
+    type: "website",
+    images: [
+      {
+        url: "/og-image.png",
+      }
+    ]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "FreeMapScrapper — Find Local Businesses & Export Real Leads",
+    description: "Search Google Maps, extract emails, phones, websites, and social profiles, and export clean CSV lead lists in seconds. No signup required.",
+    images: ["/og-image.png"]
+  }
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

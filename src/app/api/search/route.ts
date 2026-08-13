@@ -3,6 +3,8 @@ import { z } from "zod";
 import pLimit from "p-limit";
 import { searchGooglePlaces } from "@/lib/google-places";
 import { enrichBusinessResult } from "@/lib/enrichment";
+import { Redis } from "@upstash/redis";
+import { Ratelimit } from "@upstash/ratelimit";
 
 // Zod schema for request query validation
 const searchSchema = z.object({
@@ -24,6 +26,30 @@ const searchSchema = z.object({
     .preprocess((val) => val === "true" || val === true, z.boolean())
     .default(false),
 });
+
+// Initialize Upstash Redis & Rate Limiter client
+let ratelimit: Ratelimit | null = null;
+
+if (process.env.UPSTASH_REDIS_REST_URL && process.env.UPSTASH_REDIS_REST_TOKEN) {
+  try {
+    const redis = new Redis({
+      url: process.env.UPSTASH_REDIS_REST_URL,
+      token: process.env.UPSTASH_REDIS_REST_TOKEN,
+    });
+    
+    // Configure sliding window rate limit: 5 requests per 10 minutes per IP
+    ratelimit = new Ratelimit({
+      redis,
+      limiter: Ratelimit.slidingWindow(5, "10 m"),
+      analytics: true,
+      prefix: "@upstash/ratelimit",
+    });
+  } catch (error) {
+    console.error("Failed to initialize Upstash Redis rate-limiter:", error);
+  }
+} else {
+  console.warn("Upstash Redis credentials are not configured. Rate limiting is bypassed.");
+}
 
 export async function GET(request: NextRequest) {
   try {
@@ -51,6 +77,32 @@ export async function GET(request: NextRequest) {
         { error: "Google Maps API Key is missing. Please set the GOOGLE_MAPS_API_KEY environment variable." },
         { status: 500 }
       );
+    }
+
+    // Apply Rate Limiting if initialized
+    if (ratelimit) {
+      const ip =
+        request.headers.get("x-forwarded-for")?.split(",")[0].trim() ||
+        request.headers.get("x-real-ip")?.trim() ||
+        "127.0.0.1";
+
+      const { success, limit: rateLimitCount, reset, remaining } = await ratelimit.limit(ip);
+
+      if (!success) {
+        return NextResponse.json(
+          {
+            error: "Too many search requests. You have reached your limits (5 searches/10 minutes). Please try again in a few minutes.",
+          },
+          {
+            status: 429,
+            headers: {
+              "X-RateLimit-Limit": rateLimitCount.toString(),
+              "X-RateLimit-Remaining": remaining.toString(),
+              "X-RateLimit-Reset": reset.toString(),
+            },
+          }
+        );
+      }
     }
     
     let results = await searchGooglePlaces({
@@ -102,9 +154,6 @@ export async function GET(request: NextRequest) {
       userFriendlyMessage = errorMsg;
     }
 
-    return NextResponse.json(
-      { error: userFriendlyMessage },
-      { status: 500 }
-    );
+    return NextResponse.json({ error: userFriendlyMessage }, { status: 500 });
   }
 }
