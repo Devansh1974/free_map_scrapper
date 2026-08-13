@@ -43,6 +43,7 @@ export async function GET(request: NextRequest) {
     }
 
     const { query, location, limit, enrich } = parsed.data;
+    console.log(`[API Search] query: "${query}", location: "${location}", limit: ${limit}, enrich: ${enrich}`);
 
     // Verify key presence before calling the service
     if (!process.env.GOOGLE_MAPS_API_KEY) {
@@ -57,14 +58,17 @@ export async function GET(request: NextRequest) {
       location,
       limit,
     });
+    console.log(`[API Search] Google Maps returned ${results.length} places.`);
 
     // Run website enrichment concurrently using p-limit (limit 5) if requested
     if (enrich) {
+      console.log(`[API Search] Crawling websites for enrichment details...`);
       const limitPromise = pLimit(5);
       const enrichmentTasks = results.map((business) =>
         limitPromise(() => enrichBusinessResult(business))
       );
       results = await Promise.all(enrichmentTasks);
+      console.log(`[API Search] Website profile enrichment completed.`);
     }
 
     return NextResponse.json({ results });

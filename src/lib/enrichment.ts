@@ -11,10 +11,11 @@ function resolveUrl(baseUrl: string, relativeUrl: string): string {
 }
 
 // Helper to normalize the target website URL
+// Helper to normalize the target website URL
 function normalizeUrl(url: string): string {
   let cleaned = url.trim();
   if (!/^https?:\/\//i.test(cleaned)) {
-    cleaned = `http://${cleaned}`;
+    cleaned = `https://${cleaned}`; // Default to secure HTTPS
   }
   return cleaned;
 }
@@ -167,6 +168,16 @@ export async function enrichBusinessResult(business: BusinessResult): Promise<Bu
       } catch (err: any) {
         console.warn(`Enrichment Contact Page fetch failed for: ${data.contactPage}`, err.message);
       }
+    }
+
+    if (finalEmail || data.facebook || data.instagram || data.whatsapp || data.contactPage) {
+      console.log(`Successfully enriched contacts for "${business.name}":`, {
+        email: finalEmail,
+        facebook: data.facebook,
+        instagram: data.instagram,
+        whatsapp: data.whatsapp,
+        contactPage: data.contactPage,
+      });
     }
 
     // Return the enriched business result
