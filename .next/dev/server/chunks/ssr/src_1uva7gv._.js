@@ -2549,6 +2549,8 @@ function exportToCSV(results, query, location, options) {
         const escapedUrl = url.replace(/"/g, '""');
         return `=HYPERLINK("${escapedUrl}", "${escapedUrl}")`;
     };
+    // Check if enrichment data is present in the parameters or within the results
+    const hasEnrichment = !!options.enrichResults || results.some((r)=>r.email || r.instagram || r.facebook || r.whatsapp || r.contactPage);
     // Build header row
     const headers = [
         "#",
@@ -2562,7 +2564,7 @@ function exportToCSV(results, query, location, options) {
         headers.push("Rating");
         headers.push("Review Count");
     }
-    if (options.enrichResults) {
+    if (hasEnrichment) {
         headers.push("Email");
         headers.push("Instagram");
         headers.push("Facebook");
@@ -2593,7 +2595,7 @@ function exportToCSV(results, query, location, options) {
             row.push(escapeCSV(biz.rating !== undefined ? biz.rating.toString() : ""));
             row.push(escapeCSV(biz.reviews !== undefined ? biz.reviews.toString() : ""));
         }
-        if (options.enrichResults) {
+        if (hasEnrichment) {
             row.push(escapeCSV(biz.email ? `=HYPERLINK("mailto:${biz.email}", "${biz.email}")` : ""));
             row.push(escapeCSV(makeHyperlink(biz.instagram)));
             row.push(escapeCSV(makeHyperlink(biz.facebook)));

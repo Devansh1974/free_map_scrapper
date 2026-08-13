@@ -1571,3 +1571,7 @@
 {"timestamp":"01:17:18.487","source":"Server","level":"LOG","message":"✓ Compiled in 162ms"}
 {"timestamp":"01:18:18.836","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
 {"timestamp":"01:18:27.342","source":"Server","level":"LOG","message":"✓ Compiled in 156ms"}
+{"timestamp":"01:22:49.414","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"01:23:16.200","source":"Server","level":"WARN","message":"Enrichment failed for business: HAWK FITNESS BEST GYM IN ELECTRONIC CITY (website: http://www.hawkfitness.fit/) \"This operation was aborted\""}
+{"timestamp":"01:46:09.363","source":"Server","level":"LOG","message":"✓ Compiled in 568ms"}
+{"timestamp":"01:46:26.104","source":"Server","level":"LOG","message":"✓ Compiled in 62ms"}
