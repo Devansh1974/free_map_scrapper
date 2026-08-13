@@ -87,9 +87,6 @@ export function Footer() {
         <div>
           &copy; {new Date().getFullYear()} FreeMapScrapper. All rights reserved.
         </div>
-        <div>
-          Built with Next.js and Cheerio scraper models.
-        </div>
       </div>
     </footer>
   );

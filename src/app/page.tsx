@@ -88,7 +88,7 @@ export default function Home() {
               {/* 1. Features Grid (4 metrics) */}
               <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 mt-4">
                 <div className="rounded-xl border border-gray-200 bg-white p-5 flex items-start gap-4">
-                  <div className="rounded-lg bg-emerald-50 p-2.5 text-emerald-600">
+                  <div className="rounded-lg bg-neutral-50 border border-gray-200 p-2.5 text-neutral-800">
                     <CheckCircle2 className="h-5 w-5" />
                   </div>
                   <div>
@@ -98,7 +98,7 @@ export default function Home() {
                 </div>
 
                 <div className="rounded-xl border border-gray-200 bg-white p-5 flex items-start gap-4">
-                  <div className="rounded-lg bg-indigo-50 p-2.5 text-indigo-600">
+                  <div className="rounded-lg bg-neutral-50 border border-gray-200 p-2.5 text-neutral-800">
                     <TrendingUp className="h-5 w-5" />
                   </div>
                   <div>
@@ -108,7 +108,7 @@ export default function Home() {
                 </div>
 
                 <div className="rounded-xl border border-gray-200 bg-white p-5 flex items-start gap-4">
-                  <div className="rounded-lg bg-purple-50 p-2.5 text-purple-600">
+                  <div className="rounded-lg bg-neutral-50 border border-gray-200 p-2.5 text-neutral-800">
                     <Download className="h-5 w-5" />
                   </div>
                   <div>
@@ -118,7 +118,7 @@ export default function Home() {
                 </div>
 
                 <div className="rounded-xl border border-gray-200 bg-white p-5 flex items-start gap-4">
-                  <div className="rounded-lg bg-amber-50 p-2.5 text-amber-600">
+                  <div className="rounded-lg bg-neutral-50 border border-gray-200 p-2.5 text-neutral-800">
                     <Zap className="h-5 w-5" />
                   </div>
                   <div>
@@ -137,7 +137,7 @@ export default function Home() {
                 
                 <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
                   <div className="flex flex-col gap-3 p-5 rounded-xl border border-gray-200 bg-white hover:shadow-sm transition">
-                    <div className="h-8 w-8 rounded-lg bg-rose-50 flex items-center justify-center text-rose-600">
+                    <div className="h-8 w-8 rounded-lg bg-neutral-50 border border-neutral-200 flex items-center justify-center text-neutral-800">
                       <Clock className="h-4 w-4" />
                     </div>
                     <h4 className="font-semibold text-sm text-gray-900">Save Hours of Manual Work</h4>
@@ -145,7 +145,7 @@ export default function Home() {
                   </div>
 
                   <div className="flex flex-col gap-3 p-5 rounded-xl border border-gray-200 bg-white hover:shadow-sm transition">
-                    <div className="h-8 w-8 rounded-lg bg-blue-50 flex items-center justify-center text-blue-600">
+                    <div className="h-8 w-8 rounded-lg bg-neutral-50 border border-neutral-200 flex items-center justify-center text-neutral-800">
                       <Mail className="h-4 w-4" />
                     </div>
                     <h4 className="font-semibold text-sm text-gray-900">Get Verified Contact Info</h4>
@@ -153,7 +153,7 @@ export default function Home() {
                   </div>
 
                   <div className="flex flex-col gap-3 p-5 rounded-xl border border-gray-200 bg-white hover:shadow-sm transition">
-                    <div className="h-8 w-8 rounded-lg bg-emerald-50 flex items-center justify-center text-emerald-600">
+                    <div className="h-8 w-8 rounded-lg bg-neutral-50 border border-neutral-200 flex items-center justify-center text-neutral-800">
                       <Target className="h-4 w-4" />
                     </div>
                     <h4 className="font-semibold text-sm text-gray-900">Make Smarter Outreach</h4>
@@ -161,7 +161,7 @@ export default function Home() {
                   </div>
 
                   <div className="flex flex-col gap-3 p-5 rounded-xl border border-gray-200 bg-white hover:shadow-sm transition">
-                    <div className="h-8 w-8 rounded-lg bg-indigo-50 flex items-center justify-center text-indigo-600">
+                    <div className="h-8 w-8 rounded-lg bg-neutral-50 border border-neutral-200 flex items-center justify-center text-neutral-800">
                       <ShieldCheck className="h-4 w-4" />
                     </div>
                     <h4 className="font-semibold text-sm text-gray-900">Privacy Friendly</h4>
@@ -209,7 +209,7 @@ export default function Home() {
 
                 <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
                   <div className="flex items-center gap-4 p-4 rounded-xl border border-gray-200 bg-white">
-                    <div className="rounded-lg bg-teal-50 p-2.5 text-teal-600">
+                    <div className="rounded-lg bg-neutral-50 border border-gray-200 p-2.5 text-neutral-800">
                       <Building className="h-5 w-5" />
                     </div>
                     <div>
@@ -219,7 +219,7 @@ export default function Home() {
                   </div>
 
                   <div className="flex items-center gap-4 p-4 rounded-xl border border-gray-200 bg-white">
-                    <div className="rounded-lg bg-indigo-50 p-2.5 text-indigo-600">
+                    <div className="rounded-lg bg-neutral-50 border border-gray-200 p-2.5 text-neutral-800">
                       <Users className="h-5 w-5" />
                     </div>
                     <div>
@@ -229,7 +229,7 @@ export default function Home() {
                   </div>
 
                   <div className="flex items-center gap-4 p-4 rounded-xl border border-gray-200 bg-white">
-                    <div className="rounded-lg bg-emerald-50 p-2.5 text-emerald-600">
+                    <div className="rounded-lg bg-neutral-50 border border-gray-200 p-2.5 text-neutral-800">
                       <Laptop className="h-5 w-5" />
                     </div>
                     <div>
@@ -239,7 +239,7 @@ export default function Home() {
                   </div>
 
                   <div className="flex items-center gap-4 p-4 rounded-xl border border-gray-200 bg-white">
-                    <div className="rounded-lg bg-purple-50 p-2.5 text-purple-600">
+                    <div className="rounded-lg bg-neutral-50 border border-gray-200 p-2.5 text-neutral-800">
                       <BarChart className="h-5 w-5" />
                     </div>
                     <div>
