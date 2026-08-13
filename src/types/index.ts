@@ -8,4 +8,9 @@ export interface BusinessResult {
   rating?: number;
   reviews?: number;
   mapsUrl?: string;
+  email?: string;
+  facebook?: string;
+  instagram?: string;
+  whatsapp?: string;
+  contactPage?: string;
 }

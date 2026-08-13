@@ -7,6 +7,7 @@ interface ResultsTableProps {
     includeWebsite: boolean;
     includePhone: boolean;
     includeRating: boolean;
+    enrichResults?: boolean;
   };
 }
 
@@ -40,6 +41,25 @@ export function ResultsTable({ results, options }: ResultsTableProps) {
                 <th scope="col" className="px-6 py-3 font-semibold text-gray-700">
                   Rating
                 </th>
+              )}
+              {options.enrichResults && (
+                <>
+                  <th scope="col" className="px-6 py-3 font-semibold text-gray-700">
+                    Email
+                  </th>
+                  <th scope="col" className="px-6 py-3 font-semibold text-gray-700">
+                    Instagram
+                  </th>
+                  <th scope="col" className="px-6 py-3 font-semibold text-gray-700">
+                    Facebook
+                  </th>
+                  <th scope="col" className="px-6 py-3 font-semibold text-gray-700">
+                    WhatsApp
+                  </th>
+                  <th scope="col" className="px-6 py-3 font-semibold text-gray-700">
+                    Contact Us
+                  </th>
+                </>
               )}
               <th scope="col" className="px-6 py-3 font-semibold text-gray-700">
                 Maps
@@ -93,7 +113,7 @@ export function ResultsTable({ results, options }: ResultsTableProps) {
                   <td className="px-6 py-4 whitespace-nowrap font-medium text-gray-900">
                     {biz.rating !== undefined ? (
                       <span>
-                        {biz.rating.toFixed(1)}
+                         {biz.rating.toFixed(1)}
                         {biz.reviews !== undefined && (
                           <span className="text-gray-400 font-normal text-xs ml-1">
                             ({biz.reviews})
@@ -104,6 +124,82 @@ export function ResultsTable({ results, options }: ResultsTableProps) {
                       "—"
                     )}
                   </td>
+                )}
+                {options.enrichResults && (
+                  <>
+                    <td className="px-6 py-4 whitespace-nowrap">
+                      {biz.email ? (
+                        <a
+                          href={`mailto:${biz.email}`}
+                          className="text-black hover:underline font-medium"
+                        >
+                          {biz.email}
+                        </a>
+                      ) : (
+                        "—"
+                      )}
+                    </td>
+                    <td className="px-6 py-4 whitespace-nowrap">
+                      {biz.instagram ? (
+                        <a
+                          href={biz.instagram}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-black hover:underline font-medium inline-flex items-center gap-1"
+                        >
+                          Instagram
+                          <ExternalLink className="h-3 w-3 text-gray-400" />
+                        </a>
+                      ) : (
+                        "—"
+                      )}
+                    </td>
+                    <td className="px-6 py-4 whitespace-nowrap">
+                      {biz.facebook ? (
+                        <a
+                          href={biz.facebook}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-black hover:underline font-medium inline-flex items-center gap-1"
+                        >
+                          Facebook
+                          <ExternalLink className="h-3 w-3 text-gray-400" />
+                        </a>
+                      ) : (
+                        "—"
+                      )}
+                    </td>
+                    <td className="px-6 py-4 whitespace-nowrap">
+                      {biz.whatsapp ? (
+                        <a
+                          href={biz.whatsapp}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-black hover:underline font-medium inline-flex items-center gap-1"
+                        >
+                          WhatsApp
+                          <ExternalLink className="h-3 w-3 text-gray-400" />
+                        </a>
+                      ) : (
+                        "—"
+                      )}
+                    </td>
+                    <td className="px-6 py-4 whitespace-nowrap">
+                      {biz.contactPage ? (
+                        <a
+                          href={biz.contactPage}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-black hover:underline font-medium inline-flex items-center gap-1"
+                        >
+                          Contact Page
+                          <ExternalLink className="h-3 w-3 text-gray-400" />
+                        </a>
+                      ) : (
+                        "—"
+                      )}
+                    </td>
+                  </>
                 )}
                 <td className="px-6 py-4 whitespace-nowrap">
                   {biz.mapsUrl ? (

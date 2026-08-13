@@ -973,7 +973,7 @@ function ResultsTable({ results, options }) {
                                     children: "Name"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/ResultsTable.tsx",
-                                    lineNumber: 20,
+                                    lineNumber: 21,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -982,7 +982,7 @@ function ResultsTable({ results, options }) {
                                     children: "Type"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/ResultsTable.tsx",
-                                    lineNumber: 23,
+                                    lineNumber: 24,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -991,7 +991,7 @@ function ResultsTable({ results, options }) {
                                     children: "Address"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/ResultsTable.tsx",
-                                    lineNumber: 26,
+                                    lineNumber: 27,
                                     columnNumber: 15
                                 }, this),
                                 options.includePhone && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -1000,7 +1000,7 @@ function ResultsTable({ results, options }) {
                                     children: "Phone"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/ResultsTable.tsx",
-                                    lineNumber: 30,
+                                    lineNumber: 31,
                                     columnNumber: 17
                                 }, this),
                                 options.includeWebsite && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -1009,7 +1009,7 @@ function ResultsTable({ results, options }) {
                                     children: "Website"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/ResultsTable.tsx",
-                                    lineNumber: 35,
+                                    lineNumber: 36,
                                     columnNumber: 17
                                 }, this),
                                 options.includeRating && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -1018,7 +1018,60 @@ function ResultsTable({ results, options }) {
                                     children: "Rating"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/ResultsTable.tsx",
-                                    lineNumber: 40,
+                                    lineNumber: 41,
+                                    columnNumber: 17
+                                }, this),
+                                options.enrichResults && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
+                                            scope: "col",
+                                            className: "px-6 py-3 font-semibold text-gray-700",
+                                            children: "Email"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/ResultsTable.tsx",
+                                            lineNumber: 47,
+                                            columnNumber: 19
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
+                                            scope: "col",
+                                            className: "px-6 py-3 font-semibold text-gray-700",
+                                            children: "Instagram"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/ResultsTable.tsx",
+                                            lineNumber: 50,
+                                            columnNumber: 19
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
+                                            scope: "col",
+                                            className: "px-6 py-3 font-semibold text-gray-700",
+                                            children: "Facebook"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/ResultsTable.tsx",
+                                            lineNumber: 53,
+                                            columnNumber: 19
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
+                                            scope: "col",
+                                            className: "px-6 py-3 font-semibold text-gray-700",
+                                            children: "WhatsApp"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/ResultsTable.tsx",
+                                            lineNumber: 56,
+                                            columnNumber: 19
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
+                                            scope: "col",
+                                            className: "px-6 py-3 font-semibold text-gray-700",
+                                            children: "Contact Us"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/ResultsTable.tsx",
+                                            lineNumber: 59,
+                                            columnNumber: 19
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/components/ResultsTable.tsx",
+                                    lineNumber: 46,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -1027,18 +1080,18 @@ function ResultsTable({ results, options }) {
                                     children: "Maps"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/ResultsTable.tsx",
-                                    lineNumber: 44,
+                                    lineNumber: 64,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/ResultsTable.tsx",
-                            lineNumber: 19,
+                            lineNumber: 20,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/ResultsTable.tsx",
-                        lineNumber: 18,
+                        lineNumber: 19,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tbody", {
@@ -1051,7 +1104,7 @@ function ResultsTable({ results, options }) {
                                         children: biz.name
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/ResultsTable.tsx",
-                                        lineNumber: 52,
+                                        lineNumber: 72,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -1059,7 +1112,7 @@ function ResultsTable({ results, options }) {
                                         children: biz.type || "—"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/ResultsTable.tsx",
-                                        lineNumber: 55,
+                                        lineNumber: 75,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -1067,7 +1120,7 @@ function ResultsTable({ results, options }) {
                                         children: biz.address || "—"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/ResultsTable.tsx",
-                                        lineNumber: 58,
+                                        lineNumber: 78,
                                         columnNumber: 17
                                     }, this),
                                     options.includePhone && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -1078,12 +1131,12 @@ function ResultsTable({ results, options }) {
                                             children: biz.phone
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/ResultsTable.tsx",
-                                            lineNumber: 64,
+                                            lineNumber: 84,
                                             columnNumber: 23
                                         }, this) : "—"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/ResultsTable.tsx",
-                                        lineNumber: 62,
+                                        lineNumber: 82,
                                         columnNumber: 19
                                     }, this),
                                     options.includeWebsite && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -1097,12 +1150,12 @@ function ResultsTable({ results, options }) {
                                             children: biz.website.replace(/^https?:\/\/(www\.)?/, "")
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/ResultsTable.tsx",
-                                            lineNumber: 78,
+                                            lineNumber: 98,
                                             columnNumber: 23
                                         }, this) : "—"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/ResultsTable.tsx",
-                                        lineNumber: 76,
+                                        lineNumber: 96,
                                         columnNumber: 19
                                     }, this),
                                     options.includeRating && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -1119,18 +1172,150 @@ function ResultsTable({ results, options }) {
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/ResultsTable.tsx",
-                                                    lineNumber: 98,
+                                                    lineNumber: 118,
                                                     columnNumber: 27
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/ResultsTable.tsx",
-                                            lineNumber: 95,
+                                            lineNumber: 115,
                                             columnNumber: 23
                                         }, this) : "—"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/ResultsTable.tsx",
-                                        lineNumber: 93,
+                                        lineNumber: 113,
+                                        columnNumber: 19
+                                    }, this),
+                                    options.enrichResults && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
+                                                className: "px-6 py-4 whitespace-nowrap",
+                                                children: biz.email ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                    href: `mailto:${biz.email}`,
+                                                    className: "text-black hover:underline font-medium",
+                                                    children: biz.email
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/ResultsTable.tsx",
+                                                    lineNumber: 132,
+                                                    columnNumber: 25
+                                                }, this) : "—"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/ResultsTable.tsx",
+                                                lineNumber: 130,
+                                                columnNumber: 21
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
+                                                className: "px-6 py-4 whitespace-nowrap",
+                                                children: biz.instagram ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                    href: biz.instagram,
+                                                    target: "_blank",
+                                                    rel: "noopener noreferrer",
+                                                    className: "text-black hover:underline font-medium inline-flex items-center gap-1",
+                                                    children: [
+                                                        "Instagram",
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$external$2d$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ExternalLink$3e$__["ExternalLink"], {
+                                                            className: "h-3 w-3 text-gray-400"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/ResultsTable.tsx",
+                                                            lineNumber: 151,
+                                                            columnNumber: 27
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/src/components/ResultsTable.tsx",
+                                                    lineNumber: 144,
+                                                    columnNumber: 25
+                                                }, this) : "—"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/ResultsTable.tsx",
+                                                lineNumber: 142,
+                                                columnNumber: 21
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
+                                                className: "px-6 py-4 whitespace-nowrap",
+                                                children: biz.facebook ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                    href: biz.facebook,
+                                                    target: "_blank",
+                                                    rel: "noopener noreferrer",
+                                                    className: "text-black hover:underline font-medium inline-flex items-center gap-1",
+                                                    children: [
+                                                        "Facebook",
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$external$2d$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ExternalLink$3e$__["ExternalLink"], {
+                                                            className: "h-3 w-3 text-gray-400"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/ResultsTable.tsx",
+                                                            lineNumber: 166,
+                                                            columnNumber: 27
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/src/components/ResultsTable.tsx",
+                                                    lineNumber: 159,
+                                                    columnNumber: 25
+                                                }, this) : "—"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/ResultsTable.tsx",
+                                                lineNumber: 157,
+                                                columnNumber: 21
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
+                                                className: "px-6 py-4 whitespace-nowrap",
+                                                children: biz.whatsapp ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                    href: biz.whatsapp,
+                                                    target: "_blank",
+                                                    rel: "noopener noreferrer",
+                                                    className: "text-black hover:underline font-medium inline-flex items-center gap-1",
+                                                    children: [
+                                                        "WhatsApp",
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$external$2d$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ExternalLink$3e$__["ExternalLink"], {
+                                                            className: "h-3 w-3 text-gray-400"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/ResultsTable.tsx",
+                                                            lineNumber: 181,
+                                                            columnNumber: 27
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/src/components/ResultsTable.tsx",
+                                                    lineNumber: 174,
+                                                    columnNumber: 25
+                                                }, this) : "—"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/ResultsTable.tsx",
+                                                lineNumber: 172,
+                                                columnNumber: 21
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
+                                                className: "px-6 py-4 whitespace-nowrap",
+                                                children: biz.contactPage ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                    href: biz.contactPage,
+                                                    target: "_blank",
+                                                    rel: "noopener noreferrer",
+                                                    className: "text-black hover:underline font-medium inline-flex items-center gap-1",
+                                                    children: [
+                                                        "Contact Page",
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$external$2d$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ExternalLink$3e$__["ExternalLink"], {
+                                                            className: "h-3 w-3 text-gray-400"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/ResultsTable.tsx",
+                                                            lineNumber: 196,
+                                                            columnNumber: 27
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/src/components/ResultsTable.tsx",
+                                                    lineNumber: 189,
+                                                    columnNumber: 25
+                                                }, this) : "—"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/ResultsTable.tsx",
+                                                lineNumber: 187,
+                                                columnNumber: 21
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/components/ResultsTable.tsx",
+                                        lineNumber: 129,
                                         columnNumber: 19
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -1146,45 +1331,45 @@ function ResultsTable({ results, options }) {
                                                     className: "h-3 w-3 text-gray-400"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/ResultsTable.tsx",
-                                                    lineNumber: 117,
+                                                    lineNumber: 213,
                                                     columnNumber: 23
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/ResultsTable.tsx",
-                                            lineNumber: 110,
+                                            lineNumber: 206,
                                             columnNumber: 21
                                         }, this) : "—"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/ResultsTable.tsx",
-                                        lineNumber: 108,
+                                        lineNumber: 204,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, biz.id, true, {
                                 fileName: "[project]/src/components/ResultsTable.tsx",
-                                lineNumber: 51,
+                                lineNumber: 71,
                                 columnNumber: 15
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/src/components/ResultsTable.tsx",
-                        lineNumber: 49,
+                        lineNumber: 69,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/ResultsTable.tsx",
-                lineNumber: 17,
+                lineNumber: 18,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/components/ResultsTable.tsx",
-            lineNumber: 16,
+            lineNumber: 17,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/ResultsTable.tsx",
-        lineNumber: 15,
+        lineNumber: 16,
         columnNumber: 5
     }, this);
 }
@@ -1310,6 +1495,7 @@ function SearchForm({ onSearch, isLoading }) {
     const [includeWebsite, setIncludeWebsite] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(true);
     const [includePhone, setIncludePhone] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(true);
     const [includeRating, setIncludeRating] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(true);
+    const [enrichResults, setEnrichResults] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const handleSubmit = (e)=>{
         e.preventDefault();
         if (!query.trim() || !location.trim()) return;
@@ -1320,7 +1506,8 @@ function SearchForm({ onSearch, isLoading }) {
             options: {
                 includeWebsite,
                 includePhone,
-                includeRating
+                includeRating,
+                enrichResults
             }
         });
     };
@@ -1335,7 +1522,7 @@ function SearchForm({ onSearch, isLoading }) {
                         children: "Find businesses from Google Maps"
                     }, void 0, false, {
                         fileName: "[project]/src/components/SearchForm.tsx",
-                        lineNumber: 49,
+                        lineNumber: 52,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1343,13 +1530,13 @@ function SearchForm({ onSearch, isLoading }) {
                         children: "Search any business and export the results in seconds."
                     }, void 0, false, {
                         fileName: "[project]/src/components/SearchForm.tsx",
-                        lineNumber: 52,
+                        lineNumber: 55,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/SearchForm.tsx",
-                lineNumber: 48,
+                lineNumber: 51,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
@@ -1368,7 +1555,7 @@ function SearchForm({ onSearch, isLoading }) {
                                         children: "Business / Keyword"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/SearchForm.tsx",
-                                        lineNumber: 61,
+                                        lineNumber: 64,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -1382,13 +1569,13 @@ function SearchForm({ onSearch, isLoading }) {
                                         className: "h-10 rounded-lg border border-gray-200 bg-white px-3 text-sm text-gray-900 placeholder-gray-400 transition focus:border-black focus:ring-1 focus:ring-black focus:outline-none disabled:bg-gray-50 disabled:text-gray-400"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/SearchForm.tsx",
-                                        lineNumber: 67,
+                                        lineNumber: 70,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/SearchForm.tsx",
-                                lineNumber: 60,
+                                lineNumber: 63,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1400,7 +1587,7 @@ function SearchForm({ onSearch, isLoading }) {
                                         children: "Location"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/SearchForm.tsx",
-                                        lineNumber: 81,
+                                        lineNumber: 84,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -1414,13 +1601,13 @@ function SearchForm({ onSearch, isLoading }) {
                                         className: "h-10 rounded-lg border border-gray-200 bg-white px-3 text-sm text-gray-900 placeholder-gray-400 transition focus:border-black focus:ring-1 focus:ring-black focus:outline-none disabled:bg-gray-50 disabled:text-gray-400"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/SearchForm.tsx",
-                                        lineNumber: 87,
+                                        lineNumber: 90,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/SearchForm.tsx",
-                                lineNumber: 80,
+                                lineNumber: 83,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1432,7 +1619,7 @@ function SearchForm({ onSearch, isLoading }) {
                                         children: "Maximum results"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/SearchForm.tsx",
-                                        lineNumber: 101,
+                                        lineNumber: 104,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1461,7 +1648,7 @@ function SearchForm({ onSearch, isLoading }) {
                                                                 children: "5 results"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/SearchForm.tsx",
-                                                                lineNumber: 124,
+                                                                lineNumber: 127,
                                                                 columnNumber: 19
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -1469,7 +1656,7 @@ function SearchForm({ onSearch, isLoading }) {
                                                                 children: "10 results"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/SearchForm.tsx",
-                                                                lineNumber: 125,
+                                                                lineNumber: 128,
                                                                 columnNumber: 19
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -1477,7 +1664,7 @@ function SearchForm({ onSearch, isLoading }) {
                                                                 children: "20 results"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/SearchForm.tsx",
-                                                                lineNumber: 126,
+                                                                lineNumber: 129,
                                                                 columnNumber: 19
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -1485,7 +1672,7 @@ function SearchForm({ onSearch, isLoading }) {
                                                                 children: "30 results"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/SearchForm.tsx",
-                                                                lineNumber: 127,
+                                                                lineNumber: 130,
                                                                 columnNumber: 19
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -1493,7 +1680,7 @@ function SearchForm({ onSearch, isLoading }) {
                                                                 children: "50 results"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/SearchForm.tsx",
-                                                                lineNumber: 128,
+                                                                lineNumber: 131,
                                                                 columnNumber: 19
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -1501,7 +1688,7 @@ function SearchForm({ onSearch, isLoading }) {
                                                                 children: "70 results"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/SearchForm.tsx",
-                                                                lineNumber: 129,
+                                                                lineNumber: 132,
                                                                 columnNumber: 19
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -1509,7 +1696,7 @@ function SearchForm({ onSearch, isLoading }) {
                                                                 children: "100 results"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/SearchForm.tsx",
-                                                                lineNumber: 130,
+                                                                lineNumber: 133,
                                                                 columnNumber: 19
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -1517,13 +1704,13 @@ function SearchForm({ onSearch, isLoading }) {
                                                                 children: "Custom..."
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/SearchForm.tsx",
-                                                                lineNumber: 131,
+                                                                lineNumber: 134,
                                                                 columnNumber: 19
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/SearchForm.tsx",
-                                                        lineNumber: 109,
+                                                        lineNumber: 112,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1540,23 +1727,23 @@ function SearchForm({ onSearch, isLoading }) {
                                                                 d: "M19 9l-7 7-7-7"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/SearchForm.tsx",
-                                                                lineNumber: 140,
+                                                                lineNumber: 143,
                                                                 columnNumber: 21
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/SearchForm.tsx",
-                                                            lineNumber: 134,
+                                                            lineNumber: 137,
                                                             columnNumber: 19
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/SearchForm.tsx",
-                                                        lineNumber: 133,
+                                                        lineNumber: 136,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/SearchForm.tsx",
-                                                lineNumber: 108,
+                                                lineNumber: 111,
                                                 columnNumber: 15
                                             }, this),
                                             isCustom && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -1570,25 +1757,25 @@ function SearchForm({ onSearch, isLoading }) {
                                                 className: "h-10 w-20 rounded-lg border border-gray-200 bg-white px-3 text-sm text-gray-900 placeholder-gray-400 transition focus:border-black focus:ring-1 focus:ring-black focus:outline-none disabled:bg-gray-50 disabled:text-gray-400"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/SearchForm.tsx",
-                                                lineNumber: 150,
+                                                lineNumber: 153,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/SearchForm.tsx",
-                                        lineNumber: 107,
+                                        lineNumber: 110,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/SearchForm.tsx",
-                                lineNumber: 100,
+                                lineNumber: 103,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/SearchForm.tsx",
-                        lineNumber: 58,
+                        lineNumber: 61,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1605,14 +1792,14 @@ function SearchForm({ onSearch, isLoading }) {
                                         className: "h-4 w-4 rounded border-gray-300 text-black accent-black focus:ring-black"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/SearchForm.tsx",
-                                        lineNumber: 168,
+                                        lineNumber: 171,
                                         columnNumber: 13
                                     }, this),
                                     "Include website"
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/SearchForm.tsx",
-                                lineNumber: 167,
+                                lineNumber: 170,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
@@ -1626,14 +1813,14 @@ function SearchForm({ onSearch, isLoading }) {
                                         className: "h-4 w-4 rounded border-gray-300 text-black accent-black focus:ring-black"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/SearchForm.tsx",
-                                        lineNumber: 178,
+                                        lineNumber: 181,
                                         columnNumber: 13
                                     }, this),
                                     "Include phone"
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/SearchForm.tsx",
-                                lineNumber: 177,
+                                lineNumber: 180,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
@@ -1647,20 +1834,41 @@ function SearchForm({ onSearch, isLoading }) {
                                         className: "h-4 w-4 rounded border-gray-300 text-black accent-black focus:ring-black"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/SearchForm.tsx",
-                                        lineNumber: 188,
+                                        lineNumber: 191,
                                         columnNumber: 13
                                     }, this),
                                     "Include rating"
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/SearchForm.tsx",
-                                lineNumber: 187,
+                                lineNumber: 190,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                                className: "flex items-center gap-2.5 text-sm text-gray-700 select-none font-medium",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                        type: "checkbox",
+                                        disabled: isLoading,
+                                        checked: enrichResults,
+                                        onChange: (e)=>setEnrichResults(e.target.checked),
+                                        className: "h-4 w-4 rounded border-gray-300 text-black accent-black focus:ring-black"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/SearchForm.tsx",
+                                        lineNumber: 201,
+                                        columnNumber: 13
+                                    }, this),
+                                    "Enrich results (emails & socials)"
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/components/SearchForm.tsx",
+                                lineNumber: 200,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/SearchForm.tsx",
-                        lineNumber: 166,
+                        lineNumber: 169,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1676,19 +1884,19 @@ function SearchForm({ onSearch, isLoading }) {
                                             className: "mr-2 h-4 w-4 animate-spin"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/SearchForm.tsx",
-                                            lineNumber: 208,
+                                            lineNumber: 221,
                                             columnNumber: 17
                                         }, this),
                                         "Searching..."
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/SearchForm.tsx",
-                                    lineNumber: 207,
+                                    lineNumber: 220,
                                     columnNumber: 15
                                 }, this) : "Search businesses"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/SearchForm.tsx",
-                                lineNumber: 201,
+                                lineNumber: 214,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1696,29 +1904,29 @@ function SearchForm({ onSearch, isLoading }) {
                                 children: "Results depend on publicly available Google Maps business information."
                             }, void 0, false, {
                                 fileName: "[project]/src/components/SearchForm.tsx",
-                                lineNumber: 215,
+                                lineNumber: 228,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/SearchForm.tsx",
-                        lineNumber: 200,
+                        lineNumber: 213,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/SearchForm.tsx",
-                lineNumber: 57,
+                lineNumber: 60,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/SearchForm.tsx",
-        lineNumber: 47,
+        lineNumber: 50,
         columnNumber: 5
     }, this);
 }
-_s(SearchForm, "w+nfPhc0prxnAbu0/V9GE36jQxs=");
+_s(SearchForm, "I1GInmXT5vq+UFKb93tRlTJG7Pg=");
 _c = SearchForm;
 var _c;
 __turbopack_context__.k.register(_c, "SearchForm");
@@ -1840,7 +2048,8 @@ function useSearch() {
     const [activeOptions, setActiveOptions] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])({
         includeWebsite: true,
         includePhone: true,
-        includeRating: true
+        includeRating: true,
+        enrichResults: false
     });
     const handleSearch = async (params)=>{
         setIsLoading(true);
@@ -1850,6 +2059,9 @@ function useSearch() {
             searchUrl.searchParams.set("query", params.query);
             searchUrl.searchParams.set("location", params.location);
             searchUrl.searchParams.set("limit", params.limit.toString());
+            if (params.options.enrichResults) {
+                searchUrl.searchParams.set("enrich", "true");
+            }
             const response = await fetch(searchUrl.toString());
             const data = await response.json();
             if (!response.ok) {
@@ -1886,7 +2098,7 @@ function useSearch() {
         handleDownloadCSV
     };
 }
-_s(useSearch, "rgtkcBAXDMVaIFx2D4ZupFkvTdI=");
+_s(useSearch, "RxiPmz8X+XhQDipD+B4tOjoOTX8=");
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
 }

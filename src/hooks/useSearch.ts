@@ -16,6 +16,7 @@ export function useSearch() {
     includeWebsite: true,
     includePhone: true,
     includeRating: true,
+    enrichResults: false,
   });
 
   const handleSearch = async (params: {
@@ -26,6 +27,7 @@ export function useSearch() {
       includeWebsite: boolean;
       includePhone: boolean;
       includeRating: boolean;
+      enrichResults: boolean;
     };
   }) => {
     setIsLoading(true);
@@ -36,6 +38,9 @@ export function useSearch() {
       searchUrl.searchParams.set("query", params.query);
       searchUrl.searchParams.set("location", params.location);
       searchUrl.searchParams.set("limit", params.limit.toString());
+      if (params.options.enrichResults) {
+        searchUrl.searchParams.set("enrich", "true");
+      }
 
       const response = await fetch(searchUrl.toString());
       const data = await response.json();

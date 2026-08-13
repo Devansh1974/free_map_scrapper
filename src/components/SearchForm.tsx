@@ -12,6 +12,7 @@ interface SearchFormProps {
       includeWebsite: boolean;
       includePhone: boolean;
       includeRating: boolean;
+      enrichResults: boolean;
     };
   }) => void;
   isLoading: boolean;
@@ -26,6 +27,7 @@ export function SearchForm({ onSearch, isLoading }: SearchFormProps) {
   const [includeWebsite, setIncludeWebsite] = useState(true);
   const [includePhone, setIncludePhone] = useState(true);
   const [includeRating, setIncludeRating] = useState(true);
+  const [enrichResults, setEnrichResults] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -39,6 +41,7 @@ export function SearchForm({ onSearch, isLoading }: SearchFormProps) {
         includeWebsite,
         includePhone,
         includeRating,
+        enrichResults,
       },
     });
   };
@@ -193,6 +196,16 @@ export function SearchForm({ onSearch, isLoading }: SearchFormProps) {
               className="h-4 w-4 rounded border-gray-300 text-black accent-black focus:ring-black"
             />
             Include rating
+          </label>
+          <label className="flex items-center gap-2.5 text-sm text-gray-700 select-none font-medium">
+            <input
+              type="checkbox"
+              disabled={isLoading}
+              checked={enrichResults}
+              onChange={(e) => setEnrichResults(e.target.checked)}
+              className="h-4 w-4 rounded border-gray-300 text-black accent-black focus:ring-black"
+            />
+            Enrich results (emails & socials)
           </label>
         </div>
 

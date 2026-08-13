@@ -8,6 +8,7 @@ export function exportToCSV(
     includeWebsite: boolean;
     includePhone: boolean;
     includeRating: boolean;
+    enrichResults?: boolean;
   }
 ) {
   // Build header row
@@ -17,6 +18,13 @@ export function exportToCSV(
   if (options.includeRating) {
     headers.push("Rating");
     headers.push("Review Count");
+  }
+  if (options.enrichResults) {
+    headers.push("Email");
+    headers.push("Instagram");
+    headers.push("Facebook");
+    headers.push("WhatsApp");
+    headers.push("Contact Page URL");
   }
   headers.push("Google Maps URL");
 
@@ -47,6 +55,13 @@ export function exportToCSV(
     if (options.includeRating) {
       row.push(escapeCSV(biz.rating !== undefined ? biz.rating.toString() : ""));
       row.push(escapeCSV(biz.reviews !== undefined ? biz.reviews.toString() : ""));
+    }
+    if (options.enrichResults) {
+      row.push(escapeCSV(biz.email || ""));
+      row.push(escapeCSV(biz.instagram || ""));
+      row.push(escapeCSV(biz.facebook || ""));
+      row.push(escapeCSV(biz.whatsapp || ""));
+      row.push(escapeCSV(biz.contactPage || ""));
     }
     row.push(escapeCSV(biz.mapsUrl || ""));
     return row.join(",");

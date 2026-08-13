@@ -1,6 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
 import { z } from "zod";
+import pLimit from "p-limit";
 import { searchGooglePlaces } from "@/lib/google-places";
+import { enrichBusinessResult } from "@/lib/enrichment";
 
 // Zod schema for request query validation
 const searchSchema = z.object({
@@ -18,6 +20,9 @@ const searchSchema = z.object({
     .int()
     .positive("Limit must be a positive integer.")
     .default(20),
+  enrich: z
+    .preprocess((val) => val === "true" || val === true, z.boolean())
+    .default(false),
 });
 
 export async function GET(request: NextRequest) {
@@ -27,6 +32,7 @@ export async function GET(request: NextRequest) {
       query: searchParams.get("query"),
       location: searchParams.get("location"),
       limit: searchParams.get("limit"),
+      enrich: searchParams.get("enrich"),
     };
 
     // Validate parameters using Zod
@@ -36,7 +42,7 @@ export async function GET(request: NextRequest) {
       return NextResponse.json({ error: errorMsg }, { status: 400 });
     }
 
-    const { query, location, limit } = parsed.data;
+    const { query, location, limit, enrich } = parsed.data;
 
     // Verify key presence before calling the service
     if (!process.env.GOOGLE_MAPS_API_KEY) {
@@ -46,11 +52,20 @@ export async function GET(request: NextRequest) {
       );
     }
     
-    const results = await searchGooglePlaces({
+    let results = await searchGooglePlaces({
       query,
       location,
       limit,
     });
+
+    // Run website enrichment concurrently using p-limit (limit 5) if requested
+    if (enrich) {
+      const limitPromise = pLimit(5);
+      const enrichmentTasks = results.map((business) =>
+        limitPromise(() => enrichBusinessResult(business))
+      );
+      results = await Promise.all(enrichmentTasks);
+    }
 
     return NextResponse.json({ results });
   } catch (error: any) {
