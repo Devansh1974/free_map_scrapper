@@ -75,7 +75,7 @@ export function SearchForm({ onSearch, isLoading }: SearchFormProps) {
               placeholder="dentist, salon, gym, restaurant"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
-              className="h-10 rounded-lg border border-gray-200 bg-white px-3 text-sm text-gray-900 placeholder-gray-400 transition focus:border-black focus:ring-1 focus:ring-black focus:outline-none disabled:bg-gray-50 disabled:text-gray-400"
+              className="h-10 rounded-lg border border-gray-200 bg-white px-3 text-sm text-gray-900 placeholder-gray-400 transition focus:border-[#1A73E8] focus:ring-1 focus:ring-[#1A73E8] focus:outline-none disabled:bg-gray-50 disabled:text-gray-400"
             />
           </div>
 
@@ -95,7 +95,7 @@ export function SearchForm({ onSearch, isLoading }: SearchFormProps) {
               placeholder="Indiranagar, Bengaluru"
               value={location}
               onChange={(e) => setLocation(e.target.value)}
-              className="h-10 rounded-lg border border-gray-200 bg-white px-3 text-sm text-gray-900 placeholder-gray-400 transition focus:border-black focus:ring-1 focus:ring-black focus:outline-none disabled:bg-gray-50 disabled:text-gray-400"
+              className="h-10 rounded-lg border border-gray-200 bg-white px-3 text-sm text-gray-900 placeholder-gray-400 transition focus:border-[#1A73E8] focus:ring-1 focus:ring-[#1A73E8] focus:outline-none disabled:bg-gray-50 disabled:text-gray-400"
             />
           </div>
 
@@ -122,7 +122,7 @@ export function SearchForm({ onSearch, isLoading }: SearchFormProps) {
                       setLimit(Number(val));
                     }
                   }}
-                  className="h-10 w-full appearance-none rounded-lg border border-gray-200 bg-white px-3 text-sm text-gray-900 transition focus:border-black focus:ring-1 focus:ring-black focus:outline-none disabled:bg-gray-50 disabled:text-gray-400"
+                  className="h-10 w-full appearance-none rounded-lg border border-gray-200 bg-white px-3 text-sm text-gray-900 transition focus:border-[#1A73E8] focus:ring-1 focus:ring-[#1A73E8] focus:outline-none disabled:bg-gray-50 disabled:text-gray-400"
                 >
                   <option value={5}>5 results</option>
                   <option value={10}>10 results</option>
@@ -158,7 +158,7 @@ export function SearchForm({ onSearch, isLoading }: SearchFormProps) {
                   placeholder="Number"
                   value={customLimit}
                   onChange={(e) => setCustomLimit(e.target.value)}
-                  className="h-10 w-20 rounded-lg border border-gray-200 bg-white px-3 text-sm text-gray-900 placeholder-gray-400 transition focus:border-black focus:ring-1 focus:ring-black focus:outline-none disabled:bg-gray-50 disabled:text-gray-400"
+                  className="h-10 w-20 rounded-lg border border-gray-200 bg-white px-3 text-sm text-gray-900 placeholder-gray-400 transition focus:border-[#1A73E8] focus:ring-1 focus:ring-[#1A73E8] focus:outline-none disabled:bg-gray-50 disabled:text-gray-400"
                 />
               )}
             </div>
@@ -173,7 +173,7 @@ export function SearchForm({ onSearch, isLoading }: SearchFormProps) {
               disabled={isLoading}
               checked={includeWebsite}
               onChange={(e) => setIncludeWebsite(e.target.checked)}
-              className="h-4 w-4 rounded border-gray-300 text-black accent-black focus:ring-black"
+              className="h-4 w-4 rounded border-gray-300 text-[#1A73E8] focus:ring-[#1A73E8] accent-[#1A73E8]"
             />
             Include website
           </label>
@@ -183,7 +183,7 @@ export function SearchForm({ onSearch, isLoading }: SearchFormProps) {
               disabled={isLoading}
               checked={includePhone}
               onChange={(e) => setIncludePhone(e.target.checked)}
-              className="h-4 w-4 rounded border-gray-300 text-black accent-black focus:ring-black"
+              className="h-4 w-4 rounded border-gray-300 text-[#1A73E8] focus:ring-[#1A73E8] accent-[#1A73E8]"
             />
             Include phone
           </label>
@@ -193,7 +193,7 @@ export function SearchForm({ onSearch, isLoading }: SearchFormProps) {
               disabled={isLoading}
               checked={includeRating}
               onChange={(e) => setIncludeRating(e.target.checked)}
-              className="h-4 w-4 rounded border-gray-300 text-black accent-black focus:ring-black"
+              className="h-4 w-4 rounded border-gray-300 text-[#1A73E8] focus:ring-[#1A73E8] accent-[#1A73E8]"
             />
             Include rating
           </label>
@@ -203,7 +203,7 @@ export function SearchForm({ onSearch, isLoading }: SearchFormProps) {
               disabled={isLoading}
               checked={enrichResults}
               onChange={(e) => setEnrichResults(e.target.checked)}
-              className="h-4 w-4 rounded border-gray-300 text-black accent-black focus:ring-black"
+              className="h-4 w-4 rounded border-gray-300 text-[#1A73E8] focus:ring-[#1A73E8] accent-[#1A73E8]"
             />
             Enrich results (emails & socials)
           </label>
@@ -214,7 +214,7 @@ export function SearchForm({ onSearch, isLoading }: SearchFormProps) {
           <button
             type="submit"
             disabled={isLoading || !query.trim() || !location.trim()}
-            className="flex h-10 w-full items-center justify-center rounded-lg bg-black text-sm font-medium text-white transition hover:bg-neutral-800 focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2 disabled:bg-gray-100 disabled:text-gray-400 md:w-auto md:px-6 cursor-pointer"
+            className="flex h-10 w-full items-center justify-center rounded-lg bg-[#1A73E8] text-sm font-medium text-white transition hover:bg-[#1557b0] focus:outline-none focus:ring-2 focus:ring-[#1A73E8] focus:ring-offset-2 disabled:bg-gray-100 disabled:text-gray-400 md:w-auto md:px-6 cursor-pointer"
           >
             {isLoading ? (
               <>

@@ -1,11 +1,1 @@
-{
-  "version": 4,
-  "routes": {},
-  "dynamicRoutes": {},
-  "notFoundRoutes": [],
-  "preview": {
-    "previewModeId": "e8792b588db616c52b1d7a6d562d37ed",
-    "previewModeSigningKey": "7e5ddfc8337f22bcc372bc3cdfb36b4bcee2b9909e28a4428a85b54abfd8e7a6",
-    "previewModeEncryptionKey": "a357d63dab29420832ce63b95a7be2b366f238f78bec0eaf5e9e49246fb15391"
-  }
-}
+{"version":4,"routes":{"/blog/local-maps-leads":{},"/blog/website-profile-enrichment":{},"/blog/places-api-developers-guide":{}},"dynamicRoutes":{"/blog/[slug]":{"dataRoute":null,"dataRouteRegex":null,"fallback":null,"fallbackRevalidate":false,"fallbackSourceRoute":"/blog/[slug]","routeRegex":"^\\/blog\\/([^/]+?)(?:\\/)?$","allowHeader":[]}},"notFoundRoutes":[],"preview":{"previewModeId":"e8792b588db616c52b1d7a6d562d37ed","previewModeSigningKey":"7e5ddfc8337f22bcc372bc3cdfb36b4bcee2b9909e28a4428a85b54abfd8e7a6","previewModeEncryptionKey":"a357d63dab29420832ce63b95a7be2b366f238f78bec0eaf5e9e49246fb15391"}}

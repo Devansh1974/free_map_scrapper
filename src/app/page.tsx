@@ -44,8 +44,9 @@ export default function Home() {
           <span className="inline-flex items-center gap-1.5 rounded-full bg-neutral-100 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-neutral-800 border border-neutral-200">
             FREE &bull; NO SIGNUP &bull; REAL DATA
           </span>
-          <h1 className="text-3xl font-extrabold tracking-tight text-neutral-900 sm:text-4xl md:text-5xl">
-            Find Local Businesses.<br />Get Real Leads.
+          <h1 className="text-3xl font-extrabold tracking-tight text-neutral-900 sm:text-4xl md:text-5xl animate-none">
+            Find Local Businesses.<br />
+            <span className="text-[#188038]">Get Real Leads.</span>
           </h1>
           <p className="text-base text-neutral-500 max-w-[640px] sm:text-lg">
             Search Google Maps, extract contact information, and export results in seconds. Emails, phones, websites, and social profiles in one place.
@@ -259,7 +260,7 @@ export default function Home() {
                     window.scrollTo({ top: 0, behavior: "smooth" });
                     document.getElementById("query")?.focus();
                   }}
-                  className="inline-flex items-center justify-center gap-1.5 h-10 px-6 rounded-lg bg-black text-sm font-medium text-white transition hover:bg-neutral-800 focus:outline-none cursor-pointer"
+                  className="inline-flex items-center justify-center gap-1.5 h-10 px-6 rounded-lg bg-[#1A73E8] text-sm font-medium text-white transition hover:bg-[#1557b0] focus:outline-none cursor-pointer"
                 >
                   Start Searching Now
                   <ArrowRight className="h-4 w-4" />

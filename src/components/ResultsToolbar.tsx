@@ -16,7 +16,7 @@ export function ResultsToolbar({ count, onDownloadCSV, onClear }: ResultsToolbar
         <button
           type="button"
           onClick={onDownloadCSV}
-          className="flex h-9 items-center justify-center gap-1.5 rounded-lg border border-gray-200 bg-white px-4 text-xs font-semibold text-gray-700 transition hover:bg-gray-50 hover:text-black focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2 cursor-pointer"
+          className="flex h-9 items-center justify-center gap-1.5 rounded-lg border border-[#1A73E8] bg-[#1A73E8] px-4 text-xs font-semibold text-white transition hover:bg-[#1557b0] focus:outline-none focus:ring-2 focus:ring-[#1A73E8] focus:ring-offset-2 cursor-pointer"
         >
           <Download className="h-3.5 w-3.5" />
           Download CSV

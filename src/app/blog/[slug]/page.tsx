@@ -93,7 +93,7 @@ export default async function BlogPostPage({ params }: PageProps) {
             <h4 className="font-bold text-gray-900 text-sm">Want to try scraping these leads?</h4>
             <Link
               href="/"
-              className="inline-flex h-10 items-center justify-center rounded-lg bg-black px-6 text-sm font-medium text-white transition hover:bg-neutral-800 focus:outline-none"
+              className="inline-flex h-10 items-center justify-center rounded-lg bg-[#1A73E8] px-6 text-sm font-medium text-white transition hover:bg-[#1557b0] focus:outline-none"
             >
               Go to FreeMapScrapper
             </Link>
