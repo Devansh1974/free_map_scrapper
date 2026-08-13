@@ -14,7 +14,8 @@ No signups, no onboarding, no dashboard, no subscriptions. Just a fast developer
 - **Concurrent Place Details Retrieval**: Uses promise pools to execute Details endpoints in parallel without hitting quota blocks.
 - **Free Website Profile Enrichment**: Scrapes business homepages and contact subpages for contact details (Emails, Instagram, Facebook, and WhatsApp links) for free—no paid scrapers or heavy browser instances required.
 - **Formattable CSV Exporter**: Generates `.csv` sheets with precompiled Excel `=HYPERLINK` formulas so URLs are clickable.
-- **Clean Notion/Linear-like Aesthetic**: Light theme with alternating slate borders and minimal spacing.
+- **Dynamic SEO Blog**: Pre-rendered dynamic blog subpages (`/blog/[slug]`) configured with static site generators (`generateStaticParams`) and dynamic metadata schemas.
+- **Clean Google Workspace Aesthetic**: Standardized Google Maps theme colors featuring neutral card lists, Google Blue primary buttons, and Google Green highlights.
 
 ---
 
